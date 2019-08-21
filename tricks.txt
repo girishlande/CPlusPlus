@@ -1,0 +1,473 @@
+// ---------------------------------------------------
+// Girish : Debug code to see intermediate output 
+// ---------------------------------------------------
+
+#include<io.h>
+#include <Fcntl.h>
+
+// Add following code at beginning of block 
+BOOL console_output = true;
+if (console_output) {
+	AllocConsole();
+	*stdout = *_tfdopen(_open_osfhandle((intptr_t)GetStdHandle(STD_OUTPUT_HANDLE), _O_APPEND), _T("a"));
+}
+
+// Add following code at end of block 
+
+// Girish : 
+if (console_output) {
+	FreeConsole();
+}
+
+
+// ---------------------------------------------------
+// Run some function in parallel
+// ---------------------------------------------------
+
+	#pragma omp parallel for private(i)
+	for (int i = 0; i < 10; i++)
+		fun1();
+
+
+// ---------------------------------------------------
+// Check if file is present
+// ---------------------------------------------------
+
+bool is_file_exist(const char *fileName)
+{
+    std::ifstream infile(fileName);
+    return infile.good();
+}
+
+
+// -------------------------------------
+// Get Unique logfile name at given path 
+// -------------------------------------
+void get_next_filename(const char* str)
+{
+	CString contour_folder = "D:\\;
+
+	int max_cnt = 0;
+	int cnt = 0;
+	BOOL file_exists = true;
+	char filename[400];
+	do {
+		cnt++;
+		sprintf(filename, "%s\\%s_%d.log", contour_folder.GetBuffer(0), str, cnt);
+		// Check if filename is available
+		std::ifstream infile(filename);
+		file_exists = infile.good();
+		if (file_exists) {
+			max_cnt = cnt;
+		}
+	} while (cnt<50);
+
+	output_filename = CString(filename);
+}
+
+
+// ---------------------------------
+// Writing to logfile
+// ---------------------------------
+	ofstream outfile;
+	outfile.open("d:\\paint_log.txt", ios::app);
+	outfile << "\n--------------------------------------------";
+	outfile << "\n Spacing X:" << ispacing_x << " Y:" << ispacing_y << " Z:" << ispacing_z <<std::endl;
+	outfile.close();
+
+// ---------------
+// Conversions
+// ---------------
+
+the MFC encapsulates only the SDK
+( so each CWnd has a HWND, CDC has HDC, ... CObject has a HOBJECT ).
+
+HWND hWnd = pWnd->GetSafeHwnd(); // pWnd is point to a CWnd*
+
+HDC hdc = ::GetDC(NULL);
+
+CWnd* pWnd = CWnd::FromHandle(hWnd); 
+
+CDC* pDC = CDC::FromHandle(hdc);
+
+
+CWnd* win = getParent();
+
+cwnd->HWND();
+
+
+Dialog :: paint() {
+
+PAINTSTRUCT  ps;
+CDC * dc = BeginPaint(&ps);
+RECT rect;
+GetWindowRect(&rect);
+
+
+HBRUSH blackbrush = CreateSolidBrush(BLACK_COLOR);  //BLACK_COLOR
+HGDIOBJ oldBrush = dc->SelectObject(blackbrush);
+dc->Rectangle(0, 0, rect.right - rect.left, rect.bottom);
+
+//Draw base line
+HPEN pen4 = CreatePen(PS_SOLID, 6, RGB(0, 0, 0));
+HGDIOBJ oldPen = dc->SelectObject(pen4);
+
+
+dc->SelectObject(oldPen);
+
+EndPaint(&ps);
+DeleteObject(pen4);
+DeleteObject(blackbrush);
+
+}
+
+
+// --------------------------------
+// Drawing in mFC window
+// --------------------------------
+CClientDC dc(this);
+	if (startpt.x != -1)
+	{
+		dc.MoveTo(startpt.x, startpt.y);
+		dc.LineTo(point.x, point.y);
+		CString msg("X,Y");
+		dc.TextOutW(point.x+10, point.y, msg);
+		RECT rect;
+		rect.left = point.x;
+		rect.top = point.y;
+		rect.right = point.x + 20;
+		rect.bottom = rect.top + 20;
+		COLORREF clr=102;
+		dc.FillSolidRect(&rect, clr);
+	}
+
+
+// ------------------------------------------
+// Loading cursor
+// --------------------------------------------
+// Typically you do not need to pass the application's hInstance
+// to Windows APIs directly because there are equivalent MFC
+// member functions that pass the hInstance for you.  The following
+// example is not typical:
+
+HCURSOR hCursor;
+hCursor = ::LoadCursor(AfxGetApp()->m_hInstance, 
+   MAKEINTRESOURCE(IDC_MYCURSOR));
+
+// A more direct way to get the application's hInstance is to
+// call AfxGetInstanceHandle:
+hCursor = ::LoadCursor(AfxGetInstanceHandle(), 
+   MAKEINTRESOURCE(IDC_MYCURSOR));
+
+// If you need the hInstance to load a resource, it is better
+// to call AfxGetResourceHandle instead of AfxGetInstanceHandle:
+hCursor = ::LoadCursor(AfxGetResourceHandle(), 
+   MAKEINTRESOURCE(IDC_MYCURSOR));
+
+// A better way to load the cursor resource is to call
+// CWinApp::LoadCursor
+hCursor = AfxGetApp()->LoadCursor(IDC_MYCURSOR);
+
+
+// ------------------------------------
+// Get Dialog handle
+// ------------------------------------
+Assuming you're using MFC (as indicated by the tag), then presumably you have a CDialog class instance.  CDialog is a subclass of CWnd, so you can retrieve the window handle by one of 3 ways:
+
+Directly accessing its m_hWnd member
+Casting it to an HWND with operator HWND()
+Calling GetSafeHwnd() on it
+
+// ----------------
+// Unique String
+// ----------------
+void ModelListHandler::UnqiuelyName( Model &m )
+{
+	BOOL UNIQUE = FALSE;
+	int num = 1;
+
+	if (CheckForName(m))
+	{
+		CString name = m.name;
+		while(!UNIQUE)
+		{
+			m.name.Format("%s %d",name.GetBuffer(),++num);
+			UNIQUE = !CheckForName(m);
+		}
+	}
+}
+
+// ---------------------------------
+//  Integer to string and date format
+// ---------------------------------
+
+#include "stdafx.h"
+#include <string>
+#include <ctime>
+#include <iostream>
+
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	time_t t = time(0);   // get time now
+	struct tm now;
+	localtime_s(&now, &t);
+	std::string str("");
+	str = (now.tm_year + 1900) + '/' + (now.tm_mon + 1) + '/' + now.tm_mday;
+	cout << " Date : " << now.tm_mday << '/' << (now.tm_mon + 1) << '/' << now.tm_year + 1900;
+
+	string yearstr = std::to_string(now.tm_year + 1900);
+	string monthstr = std::to_string(now.tm_mon + 1);
+	string daystr = std::to_string(now.tm_mday);
+	cout << "\n Date : " << daystr << '/' << monthstr << '/' << yearstr;
+	return 0;
+}
+
+
+// ------------------------------------------------
+// Girish : Return Todays Date in string format 
+// ------------------------------------------------
+#include<sstream>
+std::string CPaintResectDlg::datestr()
+{
+	std::stringstream stream;
+	struct tm now;
+	time_t t = time(0);
+	localtime_s(&now, &t);
+	if (now.tm_mday < 10)
+	{
+		stream << "0";
+	}
+
+	stream << now.tm_mday << "/";
+
+	if (now.tm_mon + 1 < 10)
+	{
+		stream << "0";
+	}
+
+	stream << now.tm_mon + 1 << "/" << now.tm_year + 1900;
+	return stream.str();
+}
+
+// ----------------------------------------------------
+// Girish : Construct string dynamically 
+// ----------------------------------------------------
+#include <sstream>
+
+std::stringstream streamPOPT;
+int font_height = 10;
+streamPOPT << "standard; name=Helvetica; size=" << font_height + 6;
+std::string fontstrPOPT = streamPOPT.str();
+jag::pdf::Font fontPOPT = doc.font_load(fontstrPOPT.c_str());
+canvas.text_font(fontPOPT);
+
+// ------------------------------
+// Reading file 
+// ------------------------------
+#include <fstream>
+#include <string>
+
+string line;
+  ifstream myfile ("example.txt");
+  if (myfile.is_open())
+  {
+    while ( getline (myfile,line) )
+    {
+      cout << line << '\n';
+    }
+    myfile.close();
+  }
+
+//------------------------------------------------
+// How to start postgress database command prompt 
+//------------------------------------------------
+
+Hi,
+
+Go to Start->run ->  type cmd  <press enter>
+
+say you get the c: prompt then type
+
+C:\blah\blah> psql -U postgres template1
+
+above assumes psql is in PATH. if it succeeds
+you shall get a psql prompt.
+
+once you get the prompt , follow the instructions in text book
+to create new database , users etc.
+
+
+//-------------------------------------------
+// To start sql prompt from mysql console 
+//-------------------------------------------
+mysql -u root -p
+
+// -------------------
+// Virtual box VmWare 
+// -------------------
+These softwares are used for creating virtual machines on your machine
+For e.g You have windows and want to run linux on it , its possible using
+these softwares.
+
+Note : Vmware Player is not free for commercial use and hence we prefer virtual box.
+
+I installed centos using virtual box. 
+YOu have to specify configuration of hardware and select proper config for image
+for e.g I used Redhat32 bit config which matched to my images of centos.
+For other versions it was not working. 
+Then in software selection I selected GHOME for Graphical user interface otherwise it will 
+install command prompt version of centos!!
+
+then You have to enable internet connection for this operating system otherwise you cannot use yum command to update the softwares. 
+
+// ------------------------------------------------
+// Databases tried for DB corruption issue in CMS (OMRON)
+// ------------------------------------------------
+1. SQL server compact database : this is microsofts relational database
+2. SQLite database : This is opensource lightweight relational database 
+3. Berkeley File based database  : this is filebased key-value pair database
+4. Postgres database : this is again simple opensource relational database 
+5. Mysql : this is simple relational database used on windows for web application 
+
+
+// ------------------------- 
+// Using Timers in code 
+// ------------------------- 
+#include <ctime>
+
+	std::clock_t start;
+		double duration;
+		start = std::clock();
+
+// -------------------
+// Installing QT 
+// -------------------
+Goto qt website. 
+Select opensource application and not sure whenever possible
+Create new account or login using existing account 
+Download qt SETUP FOR YOUR Compiler.
+I downloaded for microsoft visual studio 2013
+QT is framework. Set of classes. It provides you IDE QT creator for designing your forms,
+Creating Project (.pro) but it doesnt compile C++ code. 
+And hence you need to have some compiler . 
+In this case its visual studio 2013. 
+YOu can use some simple free source compiler such as mingw.
+Basically 
+1. sign in to QT website.
+2. Go to downloads.
+3. Select product (QT)
+ It will give links to all variation of QT
+4. Select link with given compiler and download setup.
+
+5. Install it in C:\QT folder 
+
+
+
+//------------------------------------------------
+// Writing pdf file from QT code
+// ------------------------------------------------
+#include <QCoreApplication>
+#include <QApplication>
+#include <qdebug.h>
+#include <QPrinter>
+#include <QPainter>
+
+int main(int argc, char *argv[])
+{
+  QApplication a(argc, argv);
+  qDebug() << "Hello Girish!";
+
+  QPrinter printer(QPrinter::ScreenResolution); //create your QPrinter (don't need to be high resolution, anyway)
+  printer.setPageSize(QPrinter::A4);
+  printer.setOrientation(QPrinter::Portrait);
+  printer.setPageMargins (15,15,15,15,QPrinter::Millimeter);
+  printer.setFullPage(false);
+  printer.setOutputFileName("/analogic/Girish/file1.pdf");
+  printer.setOutputFormat(QPrinter::PdfFormat); //you can use native format of system usin QPrinter::NativeFormat
+  QPainter painter(&printer); // create a painter which will paint 'on printer'.
+
+  painter.drawLine(QPointF(10,10),QPointF(200,100));
+
+  //create a black pen that has solid line
+  //and the width is 2.
+  QPen myPen(Qt::black, 2, Qt::SolidLine);
+  painter.setPen(myPen);
+  painter.drawLine(1,1,800,1);
+  painter.drawRect(QRect(QPoint(100,100),QPoint(600,600)));
+
+  painter.setRenderHint(QPainter::Antialiasing, true);
+  painter.setPen(QPen(Qt::black, 3, Qt::DashDotLine, Qt::RoundCap));
+  painter.setBrush(QBrush(Qt::green, Qt::SolidPattern));
+  painter.drawEllipse(200, 180, 300, 240);
+
+  bool text_flag = true;
+  if (text_flag) {
+    painter.setFont(QFont("Tahoma",8));
+    painter.drawText(20,20,"Hi Girish ! This message should be at 20,20");
+    painter.drawText(200,180," My Ellipse ");
+    painter.setFont(QFont("Arial", 30));
+  }
+
+  painter.end();
+
+  return a.exec();
+}
+
+// -----------------------------------------
+// Asking questions on forum Tips
+http://catb.org/~esr/faqs/smart-questions.html
+
+
+
+
+// -----------------------
+// About Raspberry pi
+// -----------------------
+This is chip computer with low configuration bu decent enough to do the basic programming and learning computation. Very small matches box size computer. It can run version of linux called Raspbian. you can run python programs on it. You can run .net programs using mono architecture. ITs configurattion is 1.2 Ghz processor 4 quad, 1 GB RAM , 16 GB SD card. you can burn raspbian image using win32 image writer on SD card and then insert this card and start raspbian. 
+
+You can update OS and packages on raspberry with following commands
+default user: pi password: raspberry
+>> sudo apt-get update
+>> sudo apt-get upgrade
+>> sudo apt-get install tightvncserver
+this will start server will let you know port
+e.g 192.168.40.108:1
+
+Now go to windows and install vnc viewer software. In that software give above address to connect to this machine . then you can start seeing the desktop and manage it using your windows like remote desktop application 
+
+
+
+
+GREP
+=====
+findstr /s /i girish *.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
