@@ -11,4 +11,8 @@ CreatingRestApi
 
 8. Run this application 
 
+*RESTUsingCPP.cpp
+Another Program to show use of cpprestsdk third party library to make 
+REST calls. This searches string on "bing.com" and saves result on local disk. 
+
 
