@@ -464,7 +464,35 @@ To Stop screen saver while building some application using make
 ====================================================================
 save following as buildInprogress.vbs and add in startup
 
-Dim objResult
+//==============================
+// Open SSL 
+// ============================
+
+I needed openssl for building QT on windows using visual studio.
+QT has dependency on openSSL and hence I had to install/ build openssl on my machine, 
+
+I downloaded openssl source code from their website
+
+It has following dependencies to be installed on windows. 
+Perl (ActivePerl)
+Visual Studio command prompt( to run nmake)
+Netwide Assembler (NASM)
+
+1. Installed activeperl using online installer
+2. installed nasm using its installer for windows. 
+and Added executable path in System path environment variable. 
+NASM has installers for Windows available from its website under the "Downloads" tab
+
+The latest stable Win64 build (as of 15Sep2019) is available here: https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/win64/ 
+
+To build on windows it needs to fire following commands which is mentioned in INSTALL file.
+
+on Windows (only pick one of the targets for configuration):
+
+    $ perl Configure { VC-WIN32 | VC-WIN64A | VC-WIN64I | VC-CE }
+    $ nmake
+    $ nmake test
+    $ nmake install
 
 Set objShell = WScript.CreateObject("WScript.Shell")    
 
