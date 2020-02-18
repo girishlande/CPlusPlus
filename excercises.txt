@@ -1,0 +1,8 @@
+Following is list of programs that you should practice 
+to keep in touch with the syntax of C++ and to demo the concepts 
+
+1. Create a user defined stack using template class 
+It can make use of vector internally. It should support all the functions of stack such as push(), pop(), isEmpty()
+
+2. Iterate on all elements of array, vector, string using for(x:items)
+

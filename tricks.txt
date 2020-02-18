@@ -438,15 +438,40 @@ e.g 192.168.40.108:1
 Now go to windows and install vnc viewer software. In that software give above address to connect to this machine . then you can start seeing the desktop and manage it using your windows like remote desktop application 
 
 
-
-
 GREP
 =====
 findstr /s /i girish *.*
 
+REST Api client
+=============== 
+To test Rest api you can use swagger. 
+OR you can install a free software called ARC
+Advanced Rest Client application for Desktop 
+
+Build C++ project using command line
+==================
+add following commands in batch file and replace templat1.sln with project that you want to build
+
+#@echo off
+echo %~dp0
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
+msbuild "D:\test\template1\template1.sln" /p:Configuration=Debug
+
+msbuild "D:\test\template1\template1.sln" /p:Configuration=release
 
 
+To Stop screen saver while building some application using make
+====================================================================
+save following as buildInprogress.vbs and add in startup
 
+Dim objResult
+
+Set objShell = WScript.CreateObject("WScript.Shell")    
+
+Do While True
+  objResult = objShell.sendkeys("{NUMLOCK}{NUMLOCK}")
+  Wscript.Sleep (6000)
+Loop
 
 
 
