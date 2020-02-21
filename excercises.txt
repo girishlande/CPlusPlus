@@ -4,5 +4,65 @@ to keep in touch with the syntax of C++ and to demo the concepts
 1. Create a user defined stack using template class 
 It can make use of vector internally. It should support all the functions of stack such as push(), pop(), isEmpty()
 
-2. Iterate on all elements of array, vector, string using for(x:items)
+2. Iterate on all elements of array, vector, set , string using for(x:items)
+  Note : set contents are ordered by default. unorder_set do not gurantee order of saving. set uses balanced tree, unordered_set uses hash_map
+
+3. write MyString class and write default constructor, argument constructor, copy constructor, move constructor, assignment operator, move assignment operator. Rule of three says that if you are specifying any of destructor, copy constructor, copy assignment operator then you should define all of them, Rule of five adds move constructor and move assignment operator 
+
+4. write simple function which throws different types of exception with error code, char*, string object . 
+ write try , catch block to catch these exceptions and continue the execution. 
+
+5. write a code to cause memory allocation exception. 
+write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. cause memory leak and call 
+A constructor in loop and hence causing memory allocation exception. catch using bad_alloc
+
+6. Create your own exception class by deriving from exception class. override what() method. create test class. in its constructor throw your custom exception object. and now catch that in calling code. Note : Exception catching order is always catch subclass exception first.
+
+7. read and write text file using fstream, ifstream, ofstream and using getline function
+
+8. read and write structure using binary file using fstream, ifstream and ofstream and using read() and write()
+
+9. write a program do demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers 
+
+10. create a simple program to create 2D vector of integers. assign values to 2D vector elements using 2 for loops and then display same. 
+APPEND extra elements in one of the grid and then see changes 
+INSERT extra element in of the grid and then see changes. vec[1].insert(vec[1].begin()+1,1212);
+
+11. Create a map of string,int and then display it. Use iterators to see contents of map using ->first and ->second 
+find element in map using (map.find(key)!=map.end())
+add element to map using pair<string,int>("Girish",12);
+add element to map using make_pair("girish",12);
+
+12. Create a map to map from custom class object student to int. map<Student,int> map;
+Overload operator < in Student class so that this works. 
+
+13. Create set of integers. Try adding duplicate elements. 
+Create set of custom class object Student. you will have to overload operator <. define some print function for it and call using iterator on set.
+bool operator<(const Student& other) const 
+void print() const 
+
+14. Create stack of custom object student. 
+add some elements and pop them. observe constructor, destuctor getting called.
+
+15. Create vector of custom object student. Add some random student objects. 
+sort them using std::sort(vec.begin(),vec.end()). Note: you need to overload
+operator < . this can also be done using comparator function bool comp(stud& s1, stud& s2)
+
+16. create map with string->vector<int>. Add various numbers for given strings using map["giris"].push_back(10) and so on.
+Now create iterator and iterate on all map elements. For each map element get vector of ints and display its content. 
+
+17. overload equal operator for custom class and check if it works in method chaining. Note. should return const reference. 
+    overload << operator and use it to display content of the object. 
+
+18. write a complex number class with real and imaginary members. Support it with copy constructor, overloaded = operator, overloaded << to display the number in (r,i) format, overload + operator for complex + complex, complex + double, double + complex, dereference operator* . 
+
+19. 
+
+
+
+
+
+
+
+
 
