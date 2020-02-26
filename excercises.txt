@@ -1,5 +1,6 @@
 Following is list of programs that you should practice 
 to keep in touch with the syntax of C++ and to demo the concepts 
+Please don't change order and index of programs. Their corresponding solutions are index based
 
 1. Create a user defined stack using template class 
 It can make use of vector internally. It should support all the functions of stack such as push(), pop(), isEmpty()
@@ -15,14 +16,14 @@ It can make use of vector internally. It should support all the functions of sta
 5. write a code to cause memory allocation exception. 
 write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. cause memory leak and call 
 A constructor in loop and hence causing memory allocation exception. catch using bad_alloc
-
+w
 6. Create your own exception class by deriving from exception class. override what() method. create test class. in its constructor throw your custom exception object. and now catch that in calling code. Note : Exception catching order is always catch subclass exception first.
 
 7. read and write text file using fstream, ifstream, ofstream and using getline function
 
-8. read and write structure using binary file using fstream, ifstream and ofstream and using read() and write()
+8. read and write STRUCTURE using binary file using fstream, ifstream and ofstream and using read() and write()
 
-9. write a program do demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers 
+9. write a program do demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers. Usually inserting elements in vector for upto 1000 elements will be slower compared to list. But afterwords it will be faster because larger chunk of memory will be allocated and hence less time spent in memory allocation. 
 
 10. create a simple program to create 2D vector of integers. assign values to 2D vector elements using 2 for loops and then display same. 
 APPEND extra elements in one of the grid and then see changes 
@@ -56,10 +57,25 @@ Now create iterator and iterate on all map elements. For each map element get ve
 
 18. write a complex number class with real and imaginary members. Support it with copy constructor, overloaded = operator, overloaded << to display the number in (r,i) format, overload + operator for complex + complex, complex + double, double + complex, dereference operator* . 
 
-19. 
+19. write a template class to create queue of any type
 
+20. write template function to print any data type value. Call this function without passing data type in <> operator. Check when its mandatory to pass data type. 
+Use typeid(obj).name() to print its type
 
+21. write function pointer to computer factorial, even off, prime check etc. 
 
+22. write program to compute number of strings in vector with length of 3. 
+use count_if() function from algorithm.h . this function takes function pointer as argument which will check for criteria
+write your own version of count_if() by using function pointer
+
+23. Object slicing. Create parent and child class. declare one member integer in both. create base class object and initialise it 
+with derived class constructor. See if copy constructor gets called. declare method virtual and call it. 
+
+24. create abstract class animal. declare2 pure virtual functions. create derived class Dog and implement one method. Derive another class
+from Dog say Laborador and implement another method. check which objects you can create 
+Add static array of base class pointers and store concrete class Labrador. 
+
+25. 
 
 
 
