@@ -50,7 +50,7 @@ sort them using std::sort(vec.begin(),vec.end()). Note: you need to overload
 operator < . this can also be done using comparator function bool comp(stud& s1, stud& s2)
 
 16. create map with string->vector<int>. Add various numbers for given strings using map["giris"].push_back(10) and so on.
-Now create iterator and iterate on all map elements. For each map element get vector of ints and display its content. 
+Now create iterator and iterate on all map elements. For each map element get vector of ints and display its content. Show use of reference, what happens when we don't enquire reference and try modifying elements in map and vector. for(auto x:mymap) {} vs for(auto &x:mymap)
 
 17. overload equal operator for custom class and check if it works in method chaining. Note. should return const reference. 
     overload << operator and use it to display content of the object. 
@@ -62,7 +62,7 @@ Now create iterator and iterate on all map elements. For each map element get ve
 20. write template function to print any data type value. Call this function without passing data type in <> operator. Check when its mandatory to pass data type. 
 Use typeid(obj).name() to print its type
 
-21. write function pointer to computer factorial, even off, prime check etc. 
+21. write function pointer to compute factorial, even odd, prime number check etc. 
 
 22. write program to compute number of strings in vector with length of 3. 
 use count_if() function from algorithm.h . this function takes function pointer as argument which will check for criteria
@@ -72,10 +72,26 @@ write your own version of count_if() by using function pointer
 with derived class constructor. See if copy constructor gets called. declare method virtual and call it. 
 
 24. create abstract class animal. declare2 pure virtual functions. create derived class Dog and implement one method. Derive another class
-from Dog say Laborador and implement another method. check which objects you can create 
-Add static array of base class pointers and store concrete class Labrador. 
+from Dog say Laborador and implement another method. check which class objects you can create. Add static array of base class pointers and store concrete class Labrador. 
 
-25. 
+25. Write a program to create 2 threads. One will push 10 numbers and and other will pop 10 numbers from vector. 
+Keep a global vector object. access it using these 2 threads. Program should crash. 
+Now Use mutex to see that it fixes it. 
+
+26. Suppose there is a stream of emails which we are fetching from a mail server. We need to do some processing on these emails and print the output in the same order in which we received the emails.
+If we fetch emails in the order M1, M2, M3, M4, our output should be in the same order, that is, P1, P2, P3, P4. Here P1 refers to the processed output of M1.. and so on.
+Design this system using multithreading.
+
+Note : you can use shared_mutex to get your job done. you can unlock only that mutex which you have locked. otherwise you will get an error.  
+
+27. Create and display linked list. 
+
+28. Reverse linked list using recursion and pointer manipulation.
+
+29. 
+
+
+
 
 
 
