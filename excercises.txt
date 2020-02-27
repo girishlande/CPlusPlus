@@ -88,9 +88,38 @@ Note : you can use shared_mutex to get your job done. you can unlock only that m
 
 28. Reverse linked list using recursion and pointer manipulation.
 
-29. 
+29. Functors. Write structure TestMatch. overload operator () return bool. Accept string as argument and compare with some text. Create object of this structure
+and call functor by passing appropriate test. 
+Derive another class and use its instance for checking different tests. 
 
 
+30. Initilization in c++11. Initialiase structure instance using {}.
+Use initializer_list<string> items in constructor to initialise class object
+with multiple strings. Test test{"Girish","Ajit","Suhas"}  
+
+
+31. Write a class Test. Add constructor, copy constructor, assignment operator. 
+using default keyword. Now mark them =delete; and check that they can not be invoked. 
+
+
+32. write lambo expressions to calculate factorial, primecheck, evenodd
+Pass lambda expression like function pointers.
+
+33. Capture local variables in lamda expression by passing them in square bracket. 
+Capture all local variables in lamda expression by passing [=],[&]
+Try capturing this pointer in square bracket. 
+
+34. Use count_if to count number of strings with length 'n' using different ways
+> using function pointer
+> using lambda expression 
+> using functor.
+
+35. Derive class B from class A. Write parameterized constructor in class A. 
+write default constructor in class B. Now create object of A and B in main. 
+Notice that build error tells that parent needs to have default constructor. 
+If you call base class parameterized constructor from child, then there is no error. 
+
+36. write default and parameterized constructor for Test class. And now call parameterized constructor with default values from default constructor. Call constructor from another constructor. 
 
 
 
