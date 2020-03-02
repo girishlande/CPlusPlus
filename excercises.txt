@@ -121,7 +121,10 @@ If you call base class parameterized constructor from child, then there is no er
 
 36. write default and parameterized constructor for Test class. And now call parameterized constructor with default values from default constructor. Call constructor from another constructor. 
 
-
+37. Show use of function pointers.
+Create 2 function isPrime(int) and isEven(int) with same signature.
+Now write another function performCheck("testcase ", bool (*func)(int), int n);
+call this function performCheck by passing isPrime() and isEven() for kind of testing purpose. 
 
 
 
