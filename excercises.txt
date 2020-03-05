@@ -126,6 +126,20 @@ Create 2 function isPrime(int) and isEven(int) with same signature.
 Now write another function performCheck("testcase ", bool (*func)(int), int n);
 call this function performCheck by passing isPrime() and isEven() for kind of testing purpose. 
 
+38. use auto_ptr to point to integer. use it to point to custom class object. 
+Add cout messages in constructor, destructor to see that they get invoked. 
+Use auto_ptr to point to array object. Create New class and make auto_ptr 
+member of it and see how to initialise it in constructor list. 
+Use uninue_ptr instead of auto ptr now. You can see that auto_ptr doesn't work 
+with arrays 
+
+39. use shared_ptr to point to integer. Use it to point to custom class object. 
+create multiple shared pointers assigning to each other and check reference count. use_count() function returns reference count. 
+
+40. Write a program to create map of int and strings. Add multiple entries with random order using pair<int,string>()
+and make_pair(1,"Girish") format. iterate on elements and display them. Note : Elements of map are ordered by default using
+keys like sets
+
 
 
 
