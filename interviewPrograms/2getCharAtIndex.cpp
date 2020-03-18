@@ -11,6 +11,7 @@ using namespace std;
 // input string: "a4b5c2d7"
 // index: 12
 // output: Character at index 12 is d
+
 // write definition of following function 
 char* getCharAtIndex(const char* input, int index);
 

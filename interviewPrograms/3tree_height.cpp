@@ -13,6 +13,7 @@ typedef struct Node {
 // write a program to get height of the tree
 // write definition of following function
 int getTreeHeight(Node* root);
+int getTreeHeight1(Node* root);
 
 Node* createNode(int data)
 {
@@ -36,16 +37,17 @@ int main()
     a1->right = a3;
     a3->left = a4;
     a3->right = a5;
-    cout << "Height of tree:" << getTreeHeight(root) << endl;
+    cout << "Height of tree:" << getTreeHeight1(root) << endl;
 
     return 0;
 }
 
+// using single queue
 int getTreeHeight(Node* root)
 {
     queue<Node*> q;
     q.push(root);
-    int height = 1;
+    int height = -1;
     while (!q.empty()) {
         int count = q.size();
         for (int i = 0; i < count; ++i) {
@@ -57,6 +59,40 @@ int getTreeHeight(Node* root)
             q.pop();
         }
         height++;
+    }
+    return height;
+}
+
+// read all nodes from queue 's' and add its children in queue 'r'
+void readLevel(queue<Node*>& s, queue<Node*>& r)
+{
+    while (!s.empty()) {
+        Node* node = s.front();
+        if (node->left)
+            r.push(node->left);
+        if (node->right)
+            r.push(node->right);
+        s.pop();
+    }
+}
+
+// Using 2 queues
+int getTreeHeight1(Node* root)
+{
+    queue<Node*> q;
+    queue<Node*> r;
+    q.push(root);
+    int height = -1;
+    // till both queues dont become empty keep looping
+    while (!q.empty() || !r.empty()) {
+        if (!q.empty()) {
+            readLevel(q, r);
+            height++;
+        }
+        if (!r.empty()) {
+            readLevel(r, q);
+            height++;
+        }
     }
     return height;
 }

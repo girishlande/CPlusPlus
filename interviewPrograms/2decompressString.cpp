@@ -11,6 +11,18 @@ using namespace std;
 // input : a3d5w3b10c20d30
 // output : aaadddddwwwbbbbbbbbbbccccccccccccccccccccdddddddddddddddddddddddddddddd
 
+// write definition for following function declaration
+string decompressString(string in);
+
+int main()
+{
+    string encrypted("a3d5w3b10c20d30");
+    cout << "input:" << encrypted << endl
+         << "output:" << decompressString(encrypted) << endl
+         << endl;
+    return 0;
+}
+
 string decompressString(string in)
 {
     string de;
@@ -30,13 +42,4 @@ string decompressString(string in)
         i = j;
     }
     return output.str();
-}
-
-int main()
-{
-    string encrypted("a3d5w3b10c20d30");
-    cout << "input:" << encrypted << endl
-         << "output:" << decompressString(encrypted) << endl
-         << endl;
-    return 0;
 }

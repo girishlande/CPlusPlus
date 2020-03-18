@@ -8,12 +8,15 @@ using namespace std;
 // write a program to find 2 numbers whose sum is "sum"
 // void main() {
 //   vector<int> items = { 0, 10, 20, 5, 30, 7, 40, 25 };
-//   findSumPair3(items, 30);
+//   findSumPair(items, 30);
 // }
 // output:
 // 20 10 
 // 30 0 
 // 25 5
+// write definition for following function declaration
+void findSumPair(vector<int> a, int sum);
+
 
 // method 1 : Brute force. Take each number and check with all remaining numbers
 // time complexity: O(n^2)
