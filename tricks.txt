@@ -365,7 +365,7 @@ Basically
 
 
 
-//------------------------------------------------
+// ------------------------------------------------
 // Writing pdf file from QT code
 // ------------------------------------------------
 #include <QCoreApplication>
@@ -464,7 +464,7 @@ To Stop screen saver while building some application using make
 ====================================================================
 save following as buildInprogress.vbs and add in startup
 
-//==============================
+// ==============================
 // Open SSL 
 // ============================
 
@@ -501,7 +501,36 @@ Do While True
   Wscript.Sleep (6000)
 Loop
 
+// ===================================================
+// building dll using simple command (factorial.c)
+// ===================================================
+Fire following command to make system aware of visual studio compiler path.
 
+source code: factorial.c
+#include <stdint.h>
+
+#if defined(WIN32) || defined(_WIN32)
+#define EXPORT __declspec(dllexport)
+#else
+#define EXPORT
+#endif
+
+EXPORT uint64_t factorial(int max) {
+  int i = max;
+  uint64_t result = 1;
+
+  while (i >= 2) {
+    result *= i--;
+  }
+
+  return result;
+}
+
+// open command prompt
+
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
+
+cl.exe /D_USRDLL /D_WINDLL factorial.c /link /DLL /OUT:libfactorial.dll
 
 
 

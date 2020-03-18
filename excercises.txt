@@ -6,7 +6,7 @@ Please don't change order and index of programs. Their corresponding solutions a
 It can make use of vector internally. It should support all the functions of stack such as push(), pop(), isEmpty()
 
 2. Iterate on all elements of array, vector, set , string using for(x:items)
-  Note : set contents are ordered by default. unorder_set do not gurantee order of saving. set uses balanced tree, unordered_set uses hash_map
+  Note : set contents are ordered by default. unordered_set do not gurantee order of saving. set uses balanced tree, unordered_set uses hash_map
 
 3. write MyString class and write default constructor, argument constructor, copy constructor, move constructor, assignment operator, move assignment operator. Rule of three says that if you are specifying any of destructor, copy constructor, copy assignment operator then you should define all of them, Rule of five adds move constructor and move assignment operator 
 
@@ -14,22 +14,23 @@ It can make use of vector internally. It should support all the functions of sta
  write try , catch block to catch these exceptions and continue the execution. 
 
 5. write a code to cause memory allocation exception. 
-write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. cause memory leak and call 
-A constructor in loop and hence causing memory allocation exception. catch using bad_alloc
-w
+write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. Ensure memory leak and call 
+A constructor in loop and hence causing memory allocation exception. catch using bad_alloc exception
+
 6. Create your own exception class by deriving from exception class. override what() method. create test class. in its constructor throw your custom exception object. and now catch that in calling code. Note : Exception catching order is always catch subclass exception first.
 
 7. read and write text file using fstream, ifstream, ofstream and using getline function
 
 8. read and write STRUCTURE using binary file using fstream, ifstream and ofstream and using read() and write()
 
-9. write a program do demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers. Usually inserting elements in vector for upto 1000 elements will be slower compared to list. But afterwords it will be faster because larger chunk of memory will be allocated and hence less time spent in memory allocation. 
+9. write a program to demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers. Usually inserting elements in vector for upto 1000 elements will be slower compared to list. But afterwords it will be faster because larger chunk of memory will be allocated and hence less time spent in memory allocation. NOTE. Can you insert element in between vector. yes ofcourse. Like this
+vec.insert(vec.begin()+pos,element);
 
 10. create a simple program to create 2D vector of integers. assign values to 2D vector elements using 2 for loops and then display same. 
 APPEND extra elements in one of the grid and then see changes 
-INSERT extra element in of the grid and then see changes. vec[1].insert(vec[1].begin()+1,1212);
+INSERT extra element in one of the grid and then see changes. vec[1].insert(vec[1].begin()+1,1212);
 
-11. Create a map of string,int and then display it. Use iterators to see contents of map using ->first and ->second 
+11. Create a simple map of string,int and then display it. Use iterators to see contents of map using ->first and ->second 
 find element in map using (map.find(key)!=map.end())
 add element to map using pair<string,int>("Girish",12);
 add element to map using make_pair("girish",12);
