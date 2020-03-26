@@ -10,7 +10,7 @@ typedef struct Node {
     struct Node* right;
 };
 
-// write a program to get height of the tree
+// write a function to get height of the tree
 // write definition of following function
 int getTreeHeight(Node* root);
 int getTreeHeight1(Node* root);

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// write a program to find 2 numbers whose sum is "sum"
+// write a function to find all pairs of numbers in input vector whose sum is "sum"
 // void main() {
 //   vector<int> items = { 0, 10, 20, 5, 30, 7, 40, 25 };
 //   findSumPair(items, 30);

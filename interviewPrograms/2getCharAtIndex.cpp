@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-// write a program to get character at given index from decompressed string 
+// write a function to get character at given index from decompressed string 
 // e.g 
 // input string: "a4b5c2d7"
 // index: 7
@@ -20,7 +20,7 @@ int main()
     const char* str = "a4b5c2d7";
     int index = 12;
     char* output = getCharAtIndex(str, index - 1);
-    cout << "Character at index " << index << " is " << string(output) << endl;
+    cout << "Character at index " << index << " is " << getCharAtIndex(output) << endl;
 
     return 0;
 }

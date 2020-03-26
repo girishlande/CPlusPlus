@@ -1,0 +1,12 @@
+There are 2 singly linked lists with different head pointers but common tail nodes. 
+Find first common node between these 2 linked lists. Number of nodes before this common node
+can be different in both linked lists. 
+
+Find middle element of singly linked list in one pass.
+
+Find third last element in singly linked list in one pass. 
+
+How to find height of the binary search tree. 
+
+Write a code to implement LRU cache. 
+

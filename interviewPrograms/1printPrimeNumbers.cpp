@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// write a program to print all prime numbers between given 2 numbers.
+// write a function to print all prime numbers between given 2 numbers.
 // for e.g 
 // printPrimeNumbers(10, 20)
 // output:

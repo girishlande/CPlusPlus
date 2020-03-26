@@ -6,7 +6,7 @@
 #include <vector>
 using namespace std;
 
-// Write a program to decompress a string. Input string has for <char><frequency><char><frequency>..
+// Write a function to decompress a string. Input string has format <char><frequency><char><frequency>..
 // example:
 // input : a3d5w3b10c20d30
 // output : aaadddddwwwbbbbbbbbbbccccccccccccccccccccdddddddddddddddddddddddddddddd

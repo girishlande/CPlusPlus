@@ -1,4 +1,0 @@
-C++ notes
-----------------
-
-Exception handling is error technique. 

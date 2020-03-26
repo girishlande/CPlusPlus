@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-// Write a program to sort array such that 
+// Write a function to sort array such that 
 // numbers at alternate positions are all even or odd
 // e.g output
 // original array : 11, 12, 4, 8, 19, 1, 3, 6, 10, 13, 15,
