@@ -1,0 +1,38 @@
+Hello, I am girish. I work as technical architect with Agiliad. 
+My Experience is about 13 years in software development. 
+I have been responsible for developing various tools and features in some of the products in CAD and medical domain. 
+I know C++, QT, Javascript and QML. Batch scripts to perform some build related work. which is repeatative in nature.
+I understand cmake to some extent where I can use it build some simple projects using some third party libraries
+
+
+Past experience is I worked for Delcam for 8 and half years
+It was in CAD domain. My work involved visualization using openGL and C++.
+I worked in MFC to some extent. So designing UI using forms , networks and backend support involving file handling etc. 
+
+Pipe creation using solids, 
+Sculpting tool which involved triangle mesh manipulation using some tools and maths. 
+Creating @D patterns from 3D. 
+using third party DLL to create 2D pattern file with all the input details to help create lasting allowance , tratments 
+
+THickness analysis tool for dental
+whee we can create a cap for bad tooth root canal. Whether this cap is correctly fitting on tooth need to be termined using thickness 
+
+, In Agiliad I worked on multiple projects. 
+
+1. Scout development project for analogic, liver segmentation. MFC and VTK and C++. Ablation zone, using VTK libraries. PFD report generation. 
+Fixing some crash in software etc. Paint some vessels using texture and cursor. IncreaseDecrease size of the cursor. 
+
+2. Hip surgery tool using QT, VTK and camera libraries, OpenCV etc. 
+We imported DICOM data, STL data representing a model pelvic gurdle. 
+Perform some operations for planning the surgery. 
+Using 2D and 3D graphics for reamer tool. 
+
+3. Remote HMI in QML and web sockets. Input was XML file containing GUI of server application. 
+We created client application using QML where we parse that XML file and generate QML compoents on FLY and recreating UI 
+in the client application. WHen user perfomed some events in client appliction we send these events to server and server would 
+take appropriate action. Events are sent in JSON messages. 
+
+4. Mammography tool which was developed using C++ and QML and C#. Product works in distributed environment. Backend is developed using C#
+Web tool using angular. and Front end using C++ and QML. 
+
+
