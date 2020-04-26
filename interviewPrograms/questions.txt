@@ -1,2 +1,26 @@
-what is benefit of run time polymorphism
-what is difference between abstraction and encapsultio
+what is benefit of run time polymorphism using virtual function?
+
+what is difference between abstraction and encapsultion
+what is copy constructor?
+What is move constructor?
+
+what is functor?
+
+what is lambda function and whats use of it?
+
+what is exception and when should we use it?
+
+How to read and write files in C++?
+
+Do you know SOLID design principles ? 
+
+which design patterns have you used ? 
+
+what is use of static keyword? 
+
+
+what is observer design pattern ?
+what is Adapter design pattern ? 
+what is Factory design pattern ? 
+
+
