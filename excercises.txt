@@ -141,7 +141,17 @@ create multiple shared pointers assigning to each other and check reference coun
 and make_pair(1,"Girish") format. iterate on elements and display them. Note : Elements of map are ordered by default using
 keys like sets
 
+41. Demo use of Deep copy using copy constructor
 
+42. Demo how to use STL container list
+
+43. Demo use of STL container map
+
+44. How to use STL Map where custom class object is key
+
+45. Demo use of 2D vector 
+
+46. Demo use of function pointer array 
 
 
 
