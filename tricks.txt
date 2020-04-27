@@ -425,7 +425,14 @@ http://catb.org/~esr/faqs/smart-questions.html
 // -----------------------
 // About Raspberry pi
 // -----------------------
+<<<<<<< HEAD
 This is cheap computer with low configuration bu decent enough to do the basic programming and learning computation. Very small matches box size computer. It can run version of linux called Raspbian. you can run python programs on it. You can run .net programs using mono architecture. ITs configurattion is 1.2 Ghz processor 4 quad, 1 GB RAM , 16 GB SD card. you can burn raspbian image using win32 image writer on SD card and then insert this card and start raspbian. 
+=======
+This is cheap computer with low configuration bu decent enough to do the basic programming and learning computation.
+ Very small matches box size computer. It can run version of linux called Raspbian. you can run python programs on it. 
+ You can run .net programs using mono architecture. ITs configurattion is 1.2 Ghz processor 4 quad, 1 GB RAM , 16 GB SD card. 
+ you can burn raspbian image using win32 image writer on SD card and then insert this card and start raspbian. 
+>>>>>>> 0bdcca6e93e060beb3cf54ba9b90c9578ec79ff3
 
 You can update OS and packages on raspberry with following commands
 default user: pi password: raspberry
@@ -435,7 +442,8 @@ default user: pi password: raspberry
 this will start server will let you know port
 e.g 192.168.40.108:1
 
-Now go to windows and install vnc viewer software. In that software give above address to connect to this machine . then you can start seeing the desktop and manage it using your windows like remote desktop application 
+Now go to windows and install vnc viewer software. In that software give above address to connect to this machine .
+ then you can start seeing the desktop and manage it using your windows like remote desktop application 
 
 
 GREP
@@ -456,7 +464,6 @@ add following commands in batch file and replace templat1.sln with project that 
 echo %~dp0
 call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxiliary\Build\vcvarsall.bat" x86_amd64
 msbuild "D:\test\template1\template1.sln" /p:Configuration=Debug
-
 msbuild "D:\test\template1\template1.sln" /p:Configuration=release
 
 
