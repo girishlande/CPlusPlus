@@ -425,7 +425,7 @@ http://catb.org/~esr/faqs/smart-questions.html
 // -----------------------
 // About Raspberry pi
 // -----------------------
-This is chip computer with low configuration bu decent enough to do the basic programming and learning computation. Very small matches box size computer. It can run version of linux called Raspbian. you can run python programs on it. You can run .net programs using mono architecture. ITs configurattion is 1.2 Ghz processor 4 quad, 1 GB RAM , 16 GB SD card. you can burn raspbian image using win32 image writer on SD card and then insert this card and start raspbian. 
+This is cheap computer with low configuration bu decent enough to do the basic programming and learning computation. Very small matches box size computer. It can run version of linux called Raspbian. you can run python programs on it. You can run .net programs using mono architecture. ITs configurattion is 1.2 Ghz processor 4 quad, 1 GB RAM , 16 GB SD card. you can burn raspbian image using win32 image writer on SD card and then insert this card and start raspbian. 
 
 You can update OS and packages on raspberry with following commands
 default user: pi password: raspberry
@@ -532,6 +532,15 @@ call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Auxili
 
 cl.exe /D_USRDLL /D_WINDLL factorial.c /link /DLL /OUT:libfactorial.dll
 
+
+// -----------------------------
+// Logging
+// -----------------------------
+
+Logging is integral part of any application. 
+Because it helps you to identify problem in system when something goes wrong. 
+You can use some third party libraries such as 
+EasyLogging which is just single file library. You can include in your project and start using it. 
 
 
 
