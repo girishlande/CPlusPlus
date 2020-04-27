@@ -80,12 +80,59 @@ public:
 int main()
 {
     {
-        MyString s1 = "Girish";
-        MyString s2 = s1;
-        MyString s3;
-        s3 = std::move(s1);
-        MyString s4 = std::move(MyString("Suhas"));
+        MyString s1 = "Girish";  // argument constructor
+        MyString s2 = s1;  // copy constructor
+        MyString s3;  // default constructor
+        s3 = std::move(s1);  // move assignment operator 
+        MyString s4 = std::move(MyString("Suhas"));  // move constructor 
     }
     cout << endl;
     return 0;
 }
+
+// ---------------------------------------------------------------------------
+// Example 2 
+// ---------------------------------------------------------------------------
+
+class resource {
+  int x = 0;
+};
+class foo
+{
+  public:
+    foo()
+      : p{new resource{}}
+    { }
+    foo(const foo& other)
+      : p{new resource{*(other.p)}}
+    { }
+    foo(foo&& other)
+      : p{other.p}
+    {
+      other.p = nullptr;
+    }
+    foo& operator=(const foo& other)
+    {
+      if (&other != this) {
+        delete p;
+        p = nullptr;
+        p = new resource{*(other.p)};
+      }
+      return *this;
+    }
+    foo& operator=(foo&& other)
+    {
+      if (&other != this) {
+        delete p;
+        p = other.p;
+        other.p = nullptr;
+      }
+      return *this;
+    }
+    ~foo()
+    {
+      delete p;
+    }
+  private:
+    resource* p;
+};

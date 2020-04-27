@@ -1,7 +1,7 @@
-Hello, I am girish. I work as technical architect with Agiliad. 
+Hello, I am Girish. I work as Lead developer with Agiliad. 
 My Experience is about 13 years in software development. 
 I have been responsible for developing various tools and features in some of the products in CAD and medical domain. 
-I know C++, QT, Javascript and QML. Batch scripts to perform some build related work. which is repeatative in nature.
+I know C++, QT, Javascript and QML. Batch scripts to perform some build related work. which is monotonous in nature.
 I understand cmake to some extent where I can use it build some simple projects using some third party libraries
 
 
@@ -11,7 +11,7 @@ I worked in MFC to some extent. So designing UI using forms , networks and backe
 
 Pipe creation using solids, 
 Sculpting tool which involved triangle mesh manipulation using some tools and maths. 
-Creating @D patterns from 3D. 
+Creating 2D patterns from 3D. 
 using third party DLL to create 2D pattern file with all the input details to help create lasting allowance , tratments 
 
 THickness analysis tool for dental
@@ -33,6 +33,7 @@ in the client application. WHen user perfomed some events in client appliction w
 take appropriate action. Events are sent in JSON messages. 
 
 4. Mammography tool which was developed using C++ and QML and C#. Product works in distributed environment. Backend is developed using C#
-Web tool using angular. and Front end using C++ and QML. 
+Web tool using angular. and Front end using C++ and QML. I was responsible for UI enhancement and adding some features such as Multiple
+read operation by doctor. Assign patients to Doctors. Etc. 
 
 

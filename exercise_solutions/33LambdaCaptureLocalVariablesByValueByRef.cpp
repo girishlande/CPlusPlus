@@ -13,11 +13,13 @@ int main()
 
     int c = 30;
     int d = 40;
+	cout << "c=" << c << " d=" << d << endl;
     [&]() {
         c = 100;
         d = 200;
         cout << "c=" << c << " d=" << d << endl;
     }();
 
+    cout << "c=" << c << " d=" << d << endl;   
     return 0;
 }

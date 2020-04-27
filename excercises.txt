@@ -6,24 +6,33 @@ Please don't change order and index of programs. Their corresponding solutions a
 It can make use of vector internally. It should support all the functions of stack such as push(), pop(), isEmpty()
 
 2. Iterate on all elements of array, vector, set , string using for(x:items)
-  Note : set contents are ordered by default. unordered_set do not gurantee order of saving. set uses balanced tree, unordered_set uses hash_map
+  Note : set contents are ordered by default. unordered_set do not gurantee order of saving. set uses balanced tree, 
+  unordered_set uses hash_map
 
-3. write MyString class and write default constructor, argument constructor, copy constructor, move constructor, assignment operator, move assignment operator. Rule of three says that if you are specifying any of destructor, copy constructor, copy assignment operator then you should define all of them, Rule of five adds move constructor and move assignment operator 
+3. write MyString class and write default constructor, argument constructor, copy constructor, move constructor, 
+assignment operator, move assignment operator. Rule of three says that if you are specifying any of destructor, 
+copy constructor, copy assignment operator then you should define all of them, Rule of five adds move constructor 
+and move assignment operator 
 
 4. write simple function which throws different types of exception with error code, char*, string object . 
- write try , catch block to catch these exceptions and continue the execution. 
+ write try catch block to catch these exceptions and continue the execution. 
 
 5. write a code to cause memory allocation exception. 
-write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. Ensure memory leak and call 
-A constructor in loop and hence causing memory allocation exception. catch using bad_alloc exception
+write a class and allocate huge memory to char * and instantiate this class in main to show standard exception. 
+Ensure memory leak and call A constructor in loop and hence causing memory allocation exception. catch using bad_alloc exception
 
-6. Create your own exception class by deriving from exception class. override what() method. create test class. in its constructor throw your custom exception object. and now catch that in calling code. Note : Exception catching order is always catch subclass exception first.
+6. Create your own exception class by deriving from exception class. override what() method. 
+create test class. in its constructor throw your custom exception object. and now catch that in calling code. 
+Note : Exception catching order is always catch subclass exception first.
 
 7. read and write text file using fstream, ifstream, ofstream and using getline function
 
 8. read and write STRUCTURE using binary file using fstream, ifstream and ofstream and using read() and write()
 
-9. write a program to demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers. Usually inserting elements in vector for upto 1000 elements will be slower compared to list. But afterwords it will be faster because larger chunk of memory will be allocated and hence less time spent in memory allocation. NOTE. Can you insert element in between vector. yes ofcourse. Like this
+9. write a program to demo size and capacity of vectors. capacity may change exponentially or linearly based on compilers. 
+Usually inserting elements in vector for upto 1000 elements will be slower compared to list. But afterwords it will be 
+faster because larger chunk of memory will be allocated and hence less time spent in memory allocation.
+ NOTE. Can you insert element in between vector. yes ofcourse. Like this
 vec.insert(vec.begin()+pos,element);
 
 10. create a simple program to create 2D vector of integers. assign values to 2D vector elements using 2 for loops and then display same. 
@@ -51,17 +60,21 @@ sort them using std::sort(vec.begin(),vec.end()). Note: you need to overload
 operator < . this can also be done using comparator function bool comp(stud& s1, stud& s2)
 
 16. create map with string->vector<int>. Add various numbers for given strings using map["giris"].push_back(10) and so on.
-Now create iterator and iterate on all map elements. For each map element get vector of ints and display its content. Show use of reference, what happens when we don't enquire reference and try modifying elements in map and vector. for(auto x:mymap) {} vs for(auto &x:mymap)
+Now create iterator and iterate on all map elements. For each map element get vector of ints and display its content. 
+Show use of reference, what happens when we don't enquire reference and try modifying elements in map and vector.
+ for(auto x:mymap) {} vs for(auto &x:mymap)
 
 17. overload equal operator for custom class and check if it works in method chaining. Note. should return const reference. 
     overload << operator and use it to display content of the object. 
 
-18. write a complex number class with real and imaginary members. Support it with copy constructor, overloaded = operator, overloaded << to display the number in (r,i) format, overload + operator for complex + complex, complex + double, double + complex, dereference operator* . 
+18. write a complex number class with real and imaginary members. 
+Support it with copy constructor, overloaded = operator, overloaded << to display the number in (r,i) format,
+ overload + operator for complex + complex, complex + double, double + complex, dereference operator* . 
 
-19. write a template class to create queue of any type
+19. write a template class to create queue structure(use vector internally). Test with integer and strings. 
 
-20. write template function to print any data type value. Call this function without passing data type in <> operator. Check when its mandatory to pass data type. 
-Use typeid(obj).name() to print its type
+20. write template function to print any data type value. Call this function without passing data type in <> operator. 
+Check when its mandatory to pass data type. Use typeid(obj).name() to print its type
 
 21. write function pointer to compute factorial, even odd, prime number check etc. 
 
@@ -72,18 +85,22 @@ write your own version of count_if() by using function pointer
 23. Object slicing. Create parent and child class. declare one member integer in both. create base class object and initialise it 
 with derived class constructor. See if copy constructor gets called. declare method virtual and call it. 
 
-24. create abstract class animal. declare2 pure virtual functions. create derived class Dog and implement one method. Derive another class
-from Dog say Laborador and implement another method. check which class objects you can create. Add static array of base class pointers and store concrete class Labrador. 
+24. create abstract class animal. declare 2 pure virtual functions. create derived class Dog and implement one method.
+ Derive another class from Dog say Laborador and implement another method. check which class objects you can create.
+ Add static array of base class pointers and store concrete class Labrador. 
 
 25. Write a program to create 2 threads. One will push 10 numbers and and other will pop 10 numbers from vector. 
 Keep a global vector object. access it using these 2 threads. Program should crash. 
 Now Use mutex to see that it fixes it. 
 
-26. Suppose there is a stream of emails which we are fetching from a mail server. We need to do some processing on these emails and print the output in the same order in which we received the emails.
-If we fetch emails in the order M1, M2, M3, M4, our output should be in the same order, that is, P1, P2, P3, P4. Here P1 refers to the processed output of M1.. and so on.
+26. Suppose there is a stream of emails which we are fetching from a mail server. We need to do some processing on these emails 
+and print the output in the same order in which we received the emails.
+If we fetch emails in the order M1, M2, M3, M4, our output should be in the same order, that is, P1, P2, P3, P4. 
+Here P1 refers to the processed output of M1.. and so on.
 Design this system using multithreading.
 
-Note : you can use shared_mutex to get your job done. you can unlock only that mutex which you have locked. otherwise you will get an error.  
+Note : you can use shared_mutex to get your job done. you can unlock only that mutex which you have locked. 
+otherwise you will get an error.  
 
 27. Create and display linked list. 
 
@@ -103,11 +120,11 @@ with multiple strings. Test test{"Girish","Ajit","Suhas"}
 using default keyword. Now mark them =delete; and check that they can not be invoked. 
 
 
-32. write lambo expressions to calculate factorial, primecheck, evenodd
+32. write lambda expressions to calculate factorial, primecheck, evenodd
 Pass lambda expression like function pointers.
 
-33. Capture local variables in lamda expression by passing them in square bracket. 
-Capture all local variables in lamda expression by passing [=],[&]
+33. Capture local variables in lambda expression by passing them in square bracket. 
+Capture all local variables in lambda expression by passing [=],[&]
 Try capturing this pointer in square bracket. 
 
 34. Use count_if to count number of strings with length 'n' using different ways
@@ -120,7 +137,9 @@ write default constructor in class B. Now create object of A and B in main.
 Notice that build error tells that parent needs to have default constructor. 
 If you call base class parameterized constructor from child, then there is no error. 
 
-36. write default and parameterized constructor for Test class. And now call parameterized constructor with default values from default constructor. Call constructor from another constructor. 
+36. write default and parameterized constructor for Test class. 
+And now call parameterized constructor with default values from default constructor. 
+Call constructor from another constructor. This is constructor delegation 
 
 37. Show use of function pointers.
 Create 2 function isPrime(int) and isEven(int) with same signature.
