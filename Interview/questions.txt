@@ -1,39 +1,66 @@
+// OOPS
+===========
+what is virtual destructor and its use ?
 what is benefit of run time polymorphism using virtual function?
-
 what is difference between abstraction and encapsulation ?
 
+Tell me How to avoid memory leaks in program.
 what is deep copy?
 
-what is use of copy constructor?
-What is use of move constructor?
+what is use of copy constructor? Consider class Test containing int *buffer storing 10 integers. 
+How will you write copy constructor ?
+What is use of move constructor? 
 what is use of assignment operator?
-
-what is use of functor?
-what is use of lambda function?
+what is rule of 3 or rule of five ? 
 
 what is use of exception?
-How to read and write files in C++?
+tell me something about file handling in c++?
 
+what is use of static variables? 
+Can you tell something about lifetime of variables declared in program ? 
+
+Design
+===========
 can you tell me some class design principles?
 which design patterns have you used ? 
 
-what is use of static variable? 
 
-Can you tell something about lifetime of variables declared in program ? 
-
-how to check whether number is prime or not ? 
-
-how do you do file handling?
-
+ADVANCE C++
+=============
+what is use of functor?
+what is use of lambda function?
 what is object slicing?
-
 what is re-entrant function?
 
+Data structures
+==================
 what is difference between STL vector and list?
-
 what is time complexity of binary search algorithm?
 how many comparisons will happen if n=5000?
 
-can you tell a logic to check whether input number is prime or not ? 
+Multi-threading
+=================
+Have you done any Multi-threading work ? 
+Give example of Multi-threading function.
+what is use of mutex ? 
+
+// Programs
+==================
+how to check whether number is prime or not ? 
+how to calculate nth number in fibbonacci series? 
 what is logic to find 2 numbers in array with given sum?
+
+Puzzles
+===========
+There are 2 singly linked lists with different head pointers but common tail nodes. 
+Find first common node between these 2 linked lists in single pass. Number of nodes before this common node
+can be different in both linked lists. 
+
+Find middle element of singly linked list in one pass.
+
+Find third last element in singly linked list in one pass. 
+
+How to find height of the binary search tree. 
+
+Find number of ways to climb stairs by climing only one step or 2 steps at time
 
