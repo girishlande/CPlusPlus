@@ -13,12 +13,15 @@ What is use of move constructor?
 what is use of assignment operator?
 what is rule of 3 or rule of five ? 
 
-what is use of exception?
 tell me something about file handling in c++?
 
 what is use of static variables? 
 Can you tell something about lifetime of variables declared in program ? 
 
+what is mutable ? 
+What is an inline function?
+
+what is difference between reference and pointer ? 
 Design
 ===========
 can you tell me some class design principles?
@@ -49,7 +52,9 @@ what is use of mutex ?
 how to check whether number is prime or not ? 
 how to calculate nth number in fibbonacci series? 
 what is logic to find 2 numbers in array with given sum?
+void printSumPairs(int* arr, int sum) {
 
+}
 Puzzles
 ===========
 There are 2 singly linked lists with different head pointers but common tail nodes. 
@@ -63,4 +68,9 @@ Find third last element in singly linked list in one pass.
 How to find height of the binary search tree. 
 
 Find number of ways to climb stairs by climing only one step or 2 steps at time
+
+
+Domain knowledge
+==================
+what kind of domain knowledge do you have
 
