@@ -1,0 +1,29 @@
+cmake_minimum_required(VERSION 3.14)
+
+project(Phantomdetector)
+
+include_directories(${CMAKE_SOURCE_DIR}/inc
+                )
+
+# put the libs in the main bin directory for easy access from execs
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
+set(DETECTOR_LIB_FILES
+    detector/geometryphantomdetector.cpp
+    detector/nophantomdetector.cpp
+    detector/phantomdetector.cpp
+    detector/resolutionphantomdetector.cpp
+    detector/uniformityphantomdetector.cpp
+    )
+
+add_library(detector SHARED ${DETECTOR_LIB_FILES})
+target_compile_definitions(detector PRIVATE DETECTOR_LIB_EXPORT=1)
+
+set(DETECTOR_LIBRARY "detector")
+
+find_package (DCMTK REQUIRED)
+include_directories(${DCMTK_INCLUDE_DIR} )
+
+add_executable(main main.cpp)
+target_link_libraries(main ${DETECTOR_LIBRARY} ${DCMTK_LIBRARIES} )
+
