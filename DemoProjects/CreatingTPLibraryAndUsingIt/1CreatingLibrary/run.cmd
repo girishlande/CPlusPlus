@@ -1,7 +1,5 @@
 @echo off
 
-set mode=release
-
 set arg=%1
 if [%arg%]==[] (
   echo pass argument for which build to create [debug / release]

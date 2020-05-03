@@ -1,7 +1,5 @@
 @echo off
 
-set mode=release
-
 set arg=%1
 if [%arg%]==[] (
   echo pass argument for which build to create [debug / release]
@@ -23,13 +21,7 @@ if [%arg%]==[release] (
 
 :main
 
-pushd build
+set destdir=build\%mode%
+echo "Copying all dlls to destination directory:" %destdir%
 
-pushd %mode%
-
-main.exe 
-
-popd
-
-popd
-
+robocopy /NFL /NDL /NJH /NJS /nc /ns /np "C:\Girish" %destdir% *.*

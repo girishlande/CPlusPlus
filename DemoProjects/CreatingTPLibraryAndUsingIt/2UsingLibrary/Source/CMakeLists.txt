@@ -10,14 +10,19 @@ set(FACTLIB_INSTALL_LIB "${FACTLIB_DEV_ROOT}/lib/fact/")
 SET( LIB_INSTALL_PATH "C:/Girish-dev/lib/factlib/")
 SET( RUNTIME_INSTALL_PATH "C:/Girish/")
 
-find_library(FACTLIB_LIBRARY 
-			NAMES factlib 
-			HINTS ${LIB_INSTALL_PATH} REQUIRED)
+set (CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH}"
+       "C:/Girish-dev/cmake/")
+
+find_package (FACTLIB CONFIG REQUIRED)
+
+#find_library(FACTLIB_LIBRARY 
+#			NAMES factlib 
+#			HINTS ${LIB_INSTALL_PATH} REQUIRED)
 
 #overrides above to use local logger
 set(FACTLIB_LIBRARY "factlib")
 
 include_directories(${FACTLIB_INSTALL_INC})
 add_executable(main main.cpp)
-target_link_libraries(main factlib)
+target_link_libraries(main FACTLIB)
 

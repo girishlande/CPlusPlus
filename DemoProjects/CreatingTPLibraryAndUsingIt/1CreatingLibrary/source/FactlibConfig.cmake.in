@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+set (Factlib_INCLUDE_DIR "@PACKAGE_INSTALL_INCLUDE_DIR@")
+set (Factlib_LIBRARY_DIR "@PACKAGE_INSTALL_LIBRARY_DIR@")
+set (Factlib_RUNTIME_DIR "@PACKAGE_INSTALL_RUNTIME_DIR@")
+
+include (${CMAKE_CURRENT_LIST_DIR}/FactlibTargets.cmake)
+
+include (CMakeFindDependencyMacro)
