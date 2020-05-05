@@ -10,3 +10,9 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 add_executable( DisplayImage DisplayImage.cpp )
 target_link_libraries( DisplayImage ${OpenCV_LIBS} )
 
+add_executable( ShapeDetector ShapeDetector.cpp )
+target_link_libraries( ShapeDetector ${OpenCV_LIBS} )
+
+add_executable( LiveVideoParser LiveVideoParser.cpp )
+target_link_libraries( LiveVideoParser ${OpenCV_LIBS} )
+
