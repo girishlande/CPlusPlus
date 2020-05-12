@@ -42,22 +42,14 @@ void setLabel(cv::Mat& im, const std::string label, std::vector<cv::Point>& cont
     cv::putText(im, label, pt, fontface, scale, CV_RGB(0, 0, 0), thickness, 8);
 }
 
-int main()
+void processImage(string filename)
 {
-    cv::Mat src = cv::imread("../data/shapes.png");
-    if (!src.data) {
-        printf("No image data \n");
-        return -1;
-    }
-    //cv::Mat src;
+    cv::Mat src = cv::imread(filename);
     cv::Mat gray;
     cv::Mat bw;
     cv::Mat dst;
     std::vector<std::vector<cv::Point>> contours;
     std::vector<cv::Point> approx;
-
-    VideoCapture capture(0);
-    int q;
 
     // Convert to grayscale
     cv::cvtColor(src, gray, CV_BGR2GRAY);
@@ -121,6 +113,31 @@ int main()
     cv::imshow("src", src);
     cv::imshow("dst", dst);
     cvWaitKey();
+}
+
+bool checkImageExists(string& filename)
+{
+    string filepath = "../data/" + filename;
+    cv::Mat src = cv::imread(filepath);
+    if (!src.data) {
+        printf("No image data \n");
+        filepath = "../../data/" + filename;
+        src = cv::imread(filepath);
+        if (!src.data) {
+            printf("No image data \n");
+            return false;
+        }
+    }
+    filename = filepath;
+    return true;
+}
+
+int main()
+{
+    string filename("uniformity.jpeg");
+    if (checkImageExists(filename)) {
+        processImage(filename);
+    }
 
     return 0;
 }

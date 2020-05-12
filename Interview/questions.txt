@@ -1,3 +1,10 @@
+Introduction
+=============
+Hello XXX
+Good XXX
+How are you today ? 
+
+
 // OOPS
 ===========
 what is virtual destructor and its use ?
@@ -7,7 +14,14 @@ what is difference between abstraction and encapsulation ?
 Tell me How to avoid memory leaks in program.
 what is deep copy?
 
-what is use of copy constructor? Consider class Test containing int *buffer storing 10 integers. 
+write copy constructor for following class 
+class Test {
+  int * buffer; // this buffer can hold 100 integers
+  public:
+   Test(const Test& other) {
+   
+   }
+}
 How will you write copy constructor ?
 What is use of move constructor? 
 what is use of assignment operator?
@@ -19,6 +33,9 @@ what is use of static variables?
 Can you tell something about lifetime of variables declared in program ? 
 
 what is mutable ? 
+Sometimes there is requirement to modify one or more data members of class / struct through const function 
+even though you don’t want the function to update other members of class / struct
+
 What is an inline function?
 
 what is difference between reference and pointer ? 
@@ -47,14 +64,24 @@ Have you done any Multi-threading work ?
 Give example of Multi-threading function.
 what is use of mutex ? 
 
+UI (QT)
+===============
+
+
 // Programs
 ==================
+write a program to convert from decimal to binary 
 how to check whether number is prime or not ? 
 how to calculate nth number in fibbonacci series? 
 what is logic to find 2 numbers in array with given sum?
 void printSumPairs(int* arr, int sum) {
 
 }
+Write program to print binary of input decimal number
+void printBinary(int decimal) {
+   // your logic goes here 
+}
+
 Puzzles
 ===========
 There are 2 singly linked lists with different head pointers but common tail nodes. 
@@ -72,5 +99,6 @@ Find number of ways to climb stairs by climing only one step or 2 steps at time
 
 Domain knowledge
 ==================
-what kind of domain knowledge do you have
+what kind of domain knowledge do you have?
+what did you learn in your experience in industry? 
 

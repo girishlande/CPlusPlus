@@ -7,6 +7,13 @@
 #include <fstream>
 using namespace std;
 
+// write a function to print binary of given input number
+// e.g printBinary(10)
+// output: 1010
+// void printBinary(int n) {
+	
+}
+
 string toString(int n) {
     vector<char> output;
     if (n>=0 && n<10) {

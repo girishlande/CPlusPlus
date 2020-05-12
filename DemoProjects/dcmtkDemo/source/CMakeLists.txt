@@ -6,6 +6,9 @@ find_package (DCMTK REQUIRED)
 include_directories(${DCMTK_INCLUDE_DIR} )
 
 add_executable(main main.cpp)
-
-# link DCMTK library files 
 target_link_libraries(main ${DCMTK_LIBRARIES})
+
+include_directories(${CMAKE_SOURCE_DIR} )
+
+add_executable(ReadDicom ReadDicom.cpp lodepng.cpp)
+target_link_libraries(ReadDicom ${DCMTK_LIBRARIES})

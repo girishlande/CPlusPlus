@@ -7,7 +7,6 @@ using namespace std;
 // numbers at alternate positions are all even or odd
 // e.g output
 // original array : 11, 12, 4, 8, 19, 1, 3, 6, 10, 13, 15,
-//    sorted array : 1, 3, 4, 6, 8, 10, 11, 12, 13, 15, 19,
 //    Even odd sorted array : 1, 4, 3, 6, 11, 8, 13, 10, 15, 12, 19,
 // Write definition of following function 
 // void sortEvenOdd(int a[], int len, int* output)
