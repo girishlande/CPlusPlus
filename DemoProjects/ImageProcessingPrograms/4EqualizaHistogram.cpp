@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    float imgHiSt[NO_OF_GRAYLEVELS];
+
     int imgWidth, imgHeight, imgBitDepth;
     unsigned char imgHeader[BMP_HEADER_SIZE];
     unsigned char imgColorTable[BMP_COLOR_TABLE_SIZE];
@@ -12,7 +14,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/lena512.bmp";
-    const char newImgName[] ="lena_bright.bmp";
+    const char newImgName[] ="lena_eqz.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,
@@ -26,11 +28,10 @@ int main()
                                                     );
 
      myImage->readImage();
-
-     myImage->brigthnessUp(imgInBuffer,imgOutBuffer,_512by512_IMG_SIZE,50);
+     myImage->equalizeHistogram(imgInBuffer,imgOutBuffer,imgHeight,imgWidth);
      myImage->writeImage();
 
-     cout<<"2. Brightness Change Success !"<<endl;
-
+     cout<<"4. Histogram equalization Success !"<<endl;
+ 
     return 0;
 }

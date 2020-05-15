@@ -5,14 +5,16 @@ using namespace std;
 
 int main()
 {
+    float imgHiSt[NO_OF_GRAYLEVELS];
+
     int imgWidth, imgHeight, imgBitDepth;
     unsigned char imgHeader[BMP_HEADER_SIZE];
     unsigned char imgColorTable[BMP_COLOR_TABLE_SIZE];
     unsigned char imgInBuffer[_512by512_IMG_SIZE];
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
-    const char imgName[] ="../images/lena512.bmp";
-    const char newImgName[] ="lena_bright.bmp";
+    const char imgName[] ="../images/girlface.bmp";
+    const char newImgName[] ="girlface_neg.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,
@@ -26,11 +28,11 @@ int main()
                                                     );
 
      myImage->readImage();
+     myImage->getImageNegative(imgInBuffer,imgOutBuffer,imgWidth,imgHeight);
 
-     myImage->brigthnessUp(imgInBuffer,imgOutBuffer,_512by512_IMG_SIZE,50);
      myImage->writeImage();
 
-     cout<<"2. Brightness Change Success !"<<endl;
+     cout<<"6. Image negative creation Success !"<<endl;
 
     return 0;
 }

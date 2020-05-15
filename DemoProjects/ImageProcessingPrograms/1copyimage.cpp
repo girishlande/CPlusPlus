@@ -29,12 +29,12 @@ int main()
    unsigned char imgBuffer[CUSTOM_IMG_SIZE];
 
    const char imgName[] ="../images/man.bmp";
-   const char newImgName[] ="../images/man_copy.bmp";
+   const char newImgName[] ="man_copy.bmp";
 
    imageReader(imgName,&imgWidth,&imgHeight,&imgBitDepth,&imgHeader[0],&imgColorTable[0],&imgBuffer[0]);
    imageWriter(newImgName,imgHeader,imgColorTable,imgBuffer,imgBitDepth);
 
-   printf("Success !\n");
+   printf("1. copy image Success !\n");
 
     return 0;
 }
