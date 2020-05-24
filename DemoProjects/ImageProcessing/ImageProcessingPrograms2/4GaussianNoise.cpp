@@ -13,7 +13,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/lena512.bmp";
-    const char newImgName[] ="lena_gauss_noise.bmp";
+    const char newImgName[] ="4lena_gauss_noise.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,

@@ -13,7 +13,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/lena512.bmp";
-    const char newImgName[] ="lena_gauss_saltpepper.bmp";
+    const char newImgName[] ="5lena_gauss_saltpepper.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,

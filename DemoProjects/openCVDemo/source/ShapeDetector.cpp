@@ -134,7 +134,7 @@ bool checkImageExists(string& filename)
 
 int main()
 {
-    string filename("uniformity.jpeg");
+    string filename("shapes.png");
     if (checkImageExists(filename)) {
         processImage(filename);
     }

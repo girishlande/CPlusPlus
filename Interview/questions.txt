@@ -18,9 +18,7 @@ write copy constructor for following class
 class Test {
   int * buffer; // this buffer can hold 100 integers
   public:
-   Test(const Test& other) {
-   
-   }
+   // copy constructor
 }
 How will you write copy constructor ?
 What is use of move constructor? 
@@ -29,6 +27,7 @@ what is rule of 3 or rule of five ?
 
 tell me something about file handling in c++?
 
+what is different types of memory allocations done by program?
 what is use of static variables? 
 Can you tell something about lifetime of variables declared in program ? 
 
@@ -39,6 +38,7 @@ even though you don’t want the function to update other members of class / str
 What is an inline function?
 
 what is difference between reference and pointer ? 
+
 Design
 ===========
 can you tell me some class design principles?
@@ -47,10 +47,10 @@ which design patterns have you used ?
 
 ADVANCE C++
 =============
+what is use of forward declaration of class?
 what is use of functor?
 what is use of lambda function?
 what is object slicing?
-what is re-entrant function?
 
 Data structures
 ==================
@@ -63,24 +63,12 @@ Multi-threading
 Have you done any Multi-threading work ? 
 Give example of Multi-threading function.
 what is use of mutex ? 
+what is re-entrant function?
 
 UI (QT)
 ===============
+what is queued connection?
 
-
-// Programs
-==================
-write a program to convert from decimal to binary 
-how to check whether number is prime or not ? 
-how to calculate nth number in fibbonacci series? 
-what is logic to find 2 numbers in array with given sum?
-void printSumPairs(int* arr, int sum) {
-
-}
-Write program to print binary of input decimal number
-void printBinary(int decimal) {
-   // your logic goes here 
-}
 
 Puzzles
 ===========
@@ -94,7 +82,7 @@ Find third last element in singly linked list in one pass.
 
 How to find height of the binary search tree. 
 
-Find number of ways to climb stairs by climing only one step or 2 steps at time
+Find number of ways to climb stairs by climbing only one step or 2 steps at time
 
 
 Domain knowledge
@@ -102,3 +90,28 @@ Domain knowledge
 what kind of domain knowledge do you have?
 what did you learn in your experience in industry? 
 
+// Programs
+==================
+how to check whether number is prime or not ? 
+how to calculate nth number in Fibonacci series? 
+
+Write function to print binary number of input decimal number
+void printBinary(int decimal) {
+   // your logic goes here 
+}
+
+// write a function to print all prime numbers between given 2 numbers.
+// for e.g 
+// printPrimeNumbers(10, 20)
+// output:
+// Prime numbers between 10 and 20 are 11, 13, 17, 19,
+// write definition of following function declaration
+void printPrimeNumbers(int a, int b);
+
+// write a function to rotate input array by k elements
+// e.g 
+// Input : int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// rotateArray(a, size, 3);
+// Output : 7 8 9 1 2 3 4 5 6
+// write definition of following function
+void rotateArray(int* arr, int size, int k);

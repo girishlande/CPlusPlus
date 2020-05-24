@@ -3,7 +3,9 @@
 pushd build
 pushd debug
 
-call DisplayImage.exe ../../data/img1.jpg
+::call DisplayImage.exe ../../data/krishna.jpg
+::call LiveVideoParser.exe 
+call ShapeDetector.exe 
 
 popd
 popd

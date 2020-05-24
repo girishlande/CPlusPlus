@@ -3,7 +3,7 @@
 
 int main() {
   FILE *fIn = fopen("../images/cameraman.bmp", "rb");
-  FILE *fOut = fopen("cameraman_rotated3.bmp", "a+");
+  FILE *fOut = fopen("5cameraman_rotated3.bmp", "a+");
   int selected;
 
   unsigned char imgHeder[54];

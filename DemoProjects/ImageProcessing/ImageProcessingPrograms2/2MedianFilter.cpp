@@ -13,7 +13,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/girlface.bmp";
-    const char newImgName[] ="girface_medianfilt.bmp";
+    const char newImgName[] ="2girface_medianfilter.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,

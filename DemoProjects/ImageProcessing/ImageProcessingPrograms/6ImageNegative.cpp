@@ -14,7 +14,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/girlface.bmp";
-    const char newImgName[] ="girlface_neg.bmp";
+    const char newImgName[] ="6girlface_negative.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,

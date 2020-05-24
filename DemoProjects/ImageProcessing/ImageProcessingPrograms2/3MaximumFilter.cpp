@@ -13,7 +13,7 @@ int main()
     unsigned char imgOutBuffer[_512by512_IMG_SIZE];
 
     const char imgName[] ="../images/girlface.bmp";
-    const char newImgName[] ="girlface_maxfilt.bmp";
+    const char newImgName[] ="3girlface_maxfilter.bmp";
 
     ImageProcessing *myImage  = new ImageProcessing(imgName,
                                                     newImgName,

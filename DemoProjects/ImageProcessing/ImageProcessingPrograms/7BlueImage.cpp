@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
      FILE *fIn =fopen("../images/fruits.bmp","rb");
-     FILE *fOut = fopen("fruits_blur.bmp","wb");
+     FILE *fOut = fopen("7fruits_blur.bmp","wb");
 
      unsigned char imgHeader[54];
      unsigned char colorTable[1024];
