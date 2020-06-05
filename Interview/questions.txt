@@ -25,8 +25,6 @@ What is use of move constructor?
 what is use of assignment operator?
 what is rule of 3 or rule of five ? 
 
-tell me something about file handling in c++?
-
 what is different types of memory allocations done by program?
 what is use of static variables? 
 Can you tell something about lifetime of variables declared in program ? 
