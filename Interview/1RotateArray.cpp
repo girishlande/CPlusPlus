@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// write a function to rotate input array by k elements
+// write a function to rotate input array by k elements towards right direction
 // e.g 
 // Input : int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+// rotateArray(a, size, 1);
+// Output : 9 1 2 3 4 5 6 7 8
+
 // rotateArray(a, size, 3);
 // Output : 7 8 9 1 2 3 4 5 6
 
