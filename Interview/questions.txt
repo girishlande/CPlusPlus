@@ -1,17 +1,12 @@
-Introduction
-=============
-Hello XXX
-Good XXX
-How are you today ? 
-
 
 // OOPS
 ===========
-what is virtual destructor and its use ?
+what is use of virtual destructor ?
 what is benefit of run time polymorphism using virtual function?
 what is difference between abstraction and encapsulation ?
 
-Tell me How to avoid memory leaks in program.
+Tell me How do you avoid memory leaks in program. 
+How do you identify memory leaks ? 
 what is deep copy?
 
 write copy constructor for following class 
@@ -20,7 +15,6 @@ class Test {
   public:
    // copy constructor
 }
-How will you write copy constructor ?
 What is use of move constructor? 
 what is use of assignment operator?
 what is rule of 3 or rule of five ? 
@@ -106,10 +100,14 @@ void printBinary(int decimal) {
 // write definition of following function declaration
 void printPrimeNumbers(int a, int b);
 
-// write a function to rotate input array by k elements
+// write a function to right shift array by 'k' elements. 
+void RightShiftArray(int* arr, int Arraysize, int k);
 // e.g 
 // Input : int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-// rotateArray(a, size, 3);
+// RightShiftArray(a, 9, 3);
 // Output : 7 8 9 1 2 3 4 5 6
 // write definition of following function
-void rotateArray(int* arr, int size, int k);
+void RightShiftArray(int* arr, int Arraysize, int k);
+
+
+qmake -tp vc
