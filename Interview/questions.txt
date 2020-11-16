@@ -1,6 +1,6 @@
-
+// -----------
 // OOPS
-===========
+// -----------
 what is use of virtual destructor ?
 what is benefit of run time polymorphism using virtual function?
 what is difference between abstraction and encapsulation ?
@@ -60,7 +60,8 @@ what is re-entrant function?
 UI (QT)
 ===============
 what is queued connection?
-
+What happens if the same signal and slot is connected twice?
+=>It's perfectly acceptable to connect the slot twice or even more times but when the signal gets fired your slot will be called for each connection you made which is probably not what you want.
 
 Puzzles
 ===========
@@ -76,22 +77,19 @@ How to find height of the binary search tree.
 
 Find number of ways to climb stairs by climbing only one step or 2 steps at time
 
-
-Domain knowledge
-==================
-what kind of domain knowledge do you have?
-what did you learn in your experience in industry? 
-
+// ----------
 // Programs
-==================
+// ----------
 how to check whether number is prime or not ? 
 how to calculate nth number in Fibonacci series? 
 
+// -------------------------------------------------------------
 Write function to print binary number of input decimal number
 void printBinary(int decimal) {
    // your logic goes here 
 }
 
+// -------------------------------------------------------------
 // write a function to print all prime numbers between given 2 numbers.
 // for e.g 
 // printPrimeNumbers(10, 20)
@@ -100,6 +98,7 @@ void printBinary(int decimal) {
 // write definition of following function declaration
 void printPrimeNumbers(int a, int b);
 
+// -------------------------------------------------------------
 // write a function to right shift array by 'k' elements. 
 void RightShiftArray(int* arr, int Arraysize, int k);
 // e.g 
@@ -109,5 +108,322 @@ void RightShiftArray(int* arr, int Arraysize, int k);
 // write definition of following function
 void RightShiftArray(int* arr, int Arraysize, int k);
 
+// ----------------------------------------------------------
+// Write a function to check if input number is perfect.
+// Number is perfect if N is equal to sum of proper positive divisors (excluding the number itself)
+// for e.g N=6  its divisors are (1,2,3) and (1+2+3) = 6
+// for e.g N=28 its divisors are (1,2,4,7,14) and (1+2+4+7+14) = 28 
+bool IsPerfectNumber(int n) {
 
+}
+
+// ----------------------------------------------------------
+// Tokenize a string . String S contains space separated words. Some group of words are enclosed in quotes.
+// YOu have to break this string into indivisual words without breaking parts of string that are enclosed in quotes. 
+// for e.g S= xyz abc mnp "hdjs ueos kjf" def kmm
+// output :
+// xyz 
+// abc 
+// mnp 
+// "hdjs ueos kjf" 
+// def 
+// kmm
+
+// 
+// To convert QT project to visual studio 
 qmake -tp vc
+
+
+// ---------------------------------------------------
+// For Senior person 
+// ---------------------------------------------------
+Write a class which can be instantiated but not inherited.
+Improve this class further to be able to create only 5 instances of it. 
+Make it thread safe.
+
+
+Write a class which has one static member and one nonstatic member. 
+Static function should be able to access nonstatic member
+
+write a method which takes string and position.
+Check if substring from that position ahead is palindrome or not. 
+bool isSubPalindrome(std::string input, int pos)
+{
+	size_t len = input.length();
+	size_t j=1;
+	if (pos>len)
+		return false;
+	for(size_t i=pos;i<len && i<(len-j); i++,j++) {
+		if (input[i]!=input[len-j]) 
+			return false;
+	}
+	
+	return true;
+}
+
+// Write a program to find minimum cost path from Source to destination in Binary matrix
+// C++ program to find the shortest path between
+// a given source cell to a destination cell.
+#include <bits/stdc++.h>
+using namespace std;
+#define ROW 9
+#define COL 10
+ 
+//To store matrix cell cordinates
+struct Point
+{
+    int x;
+    int y;
+};
+ 
+// A Data Structure for queue used in BFS
+struct queueNode
+{
+    Point pt;  // The cordinates of a cell
+    int dist;  // cell's distance of from the source
+};
+
+// Driver program to test above function
+int main()
+{
+    int mat[ROW][COL] =
+    {
+        { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+        { 1, 0, 1, 0, 1, 1, 1, 0, 1, 1 },
+        { 1, 1, 1, 0, 1, 1, 0, 1, 0, 1 },
+        { 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 },
+        { 1, 1, 1, 0, 1, 1, 1, 0, 1, 0 },
+        { 1, 0, 1, 1, 1, 1, 0, 1, 0, 0 },
+        { 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
+        { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+        { 1, 1, 0, 0, 0, 0, 1, 0, 0, 1 }
+    };
+ 
+    Point source = {0, 0};
+    Point dest = {3, 4};
+ 
+    int dist = BFS(mat, source, dest);
+ 
+    if (dist != -1)
+        cout << "Shortest Path is " << dist ;
+    else
+        cout << "Shortest Path doesn't exist";
+ 
+    return 0;
+}
+
+
+// Brain teaser
+How to get correct advice when you can only ask one question from either a liar or a truth-teller 
+2 Doors 
+1 with treasure and 1 with painful death.
+2 people at door. 1 always lies and 1 is honest. 
+We don't know who is who. 
+We can ask only one question to one of them. 
+Problem: What question will you ask?
+
+// ----------------
+There are 5 guys in front you. 4 are togglers. and 1 Truth teller.
+First time you ask, toggler will say truth or lie. Second time you ask 
+he will give opposite answer of previous. 
+
+Problem: Who is truth teller ? you can ask 2 questions to ask.
+Solution: 1. Are you truth teller
+       If Yes
+          2. Who is truth teller ?
+	   If NO
+	      2. WHo is not truth teller ? 
+
+// ------------------
+There are 10 guys standing in line. In pitch dark. Alien is going to put Red or green cap on everyones head.
+Turn on lights. And now going to start asking what color hat is on your head ? If answer is wrong Alien will kill 
+and then ask question to next guy. 
+
+Problem: You have to come up with system so that you save maximum people. 
+
+solution: 10th person Counts number of green hats. If its odd then he will say "Green"
+          else he will say "REd". Next guy will figure out his color using mismatch in Even/Odd
+		 
+// ---------------------
+Calculate how many ways are there to go from left top corner of Table to right bottom corner of table. 
+(Binomial coefficients)
+for e.g 4X4 there are 20 ways 
+1 1 1 1 
+1 2 3 4
+1 3 6 10
+1 4 10 20
+
+
+
+// ------------------------------------------------------------
+// Create a class which can be instantiated but not inherited
+// ------------------------------------------------------------
+
+class A
+{
+
+public:
+
+static A* createInstance() {
+	
+	lock(m_mutex);
+  if (counter<5) {
+	  
+     counter++;
+	 unlock(m_mutex);
+  } else {
+	  unlock(m_mutex);
+	 return nullptr;
+  }
+  
+  return new A();
+}
+
+~A() {
+	
+	 lock(m_mutex);
+     counter--;
+	 unlock(m_mutex);
+	delete[] buffer;
+}
+
+private:
+static int counter = 0;
+int *buffer;
+std::mutex m_mutex;
+A() {
+	buffer = new int[100];
+
+}
+
+// ---------------------------------------------------
+// Publisher Subscriber Design pattern 
+// ---------------------------------------------------
+
+class Publisher 
+{
+	private:
+	std::vector<ISubscriber*> m_subscribers;
+	
+public:
+
+void register(ISubscriber* ptr) {
+	m_subscribers.push_back(ptr);
+}
+
+void Unregister(ISubscriber* ptr) {
+	// find and remove ptr from m_subscribers
+}
+
+void process(){
+	
+	// perform process
+	// Notify all subscribers
+	UpdateSubscribers();
+}	
+		
+	void UpdateSubscribers() {
+		for(auto a : m_subscribers) {
+		a->Update();
+	}
+	}
+};
+
+class ISubscriber {
+	Publisher* m_publisher;
+	public:
+	ISubscriber(Publisher* source) : m_publisher(source) {
+	}
+	virtual void Update() = 0;
+	
+};
+
+
+class SubscriberA : public ISubscriber {
+	SubscriberA(Publisher* source) : ISubscriber(source) {
+		source->register(this);
+		
+	void Update() {
+		// update for publisher
+		//m_publisher->getdata();
+	}
+};
+
+class SubscriberB : public ISubscriber {
+	
+	SubscriberB(Publisher* source) : ISubscriber(source) {
+		source->register(this);
+	}
+	void Update() {
+		// update for publisher
+		//m_publisher->getdata();
+	}
+};
+
+
+void main() {
+	Publisher p1;
+	SubscriberA s1(&p1);
+	SubscriberB s2(&p1);
+	p1.process();
+	
+}
+
+
+// --------------------------------------------------------------------
+// Extend singleton class to provide 5 instances. SO call it fiveTon
+// If I make 6 calls i should again get the first instance. 
+// --------------------------------------------------------------------
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+class Subject {
+
+  public:
+  
+  void func() {
+     std::cout << "Hello :" <<m_id << std::endl;
+  }
+  
+  static Subject* getInstance() {
+    static size_t counter;
+    size_t currentIndex = counter%5;
+    if(currentIndex >= m_instances.size()) {
+       m_instances.push_back(new Subject(counter)); 
+    }
+    counter++;
+    return m_instances[currentIndex];
+  }
+  
+
+  private:
+  Subject(size_t id):m_id(id) {
+
+  }
+  static std::vector<Subject*> m_instances;
+  int m_id;
+};
+
+std::vector<Subject*> Subject::m_instances;
+
+int main() {
+  
+  for(int i=0;i<7;i++) {
+    Subject* s = Subject::getInstance();
+    s->func();
+  }
+    
+  return 0;
+}
+s
+
+
+
+
+		  
+		  
+
+

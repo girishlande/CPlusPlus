@@ -1,3 +1,6 @@
+// --------------------
+// Introduction 
+// --------------------
 Hello, I am Girish. I work as Lead developer with Agiliad. 
 My Experience is about 13 years in software development. 
 I have been responsible for developing various tools and features in some of the products in CAD and medical domain. 
@@ -35,5 +38,25 @@ take appropriate action. Events are sent in JSON messages.
 4. Mammography tool which was developed using C++ and QML and C#. Product works in distributed environment. Backend is developed using C#
 Web tool using angular. and Front end using C++ and QML. I was responsible for UI enhancement and adding some features such as Multiple
 read operation by doctor. Assign patients to Doctors. Etc. 
+
+// ------------------------------------------------------------------------
+// As a wealthy person, what are your tips for financial independence?
+// ------------------------------------------------------------------------
+My top 7:
+
+I’ve seen both sides. The view from the penthouse is a hell of a lot better.
+
+Retirement. Whoever thought that was a good idea? Resign, revise, retool, redesign. Honestly, you’ll probably hit your stride after several years of experience. I did. Why give up the earnings? And with income you’ll hit financial independence sooner.
+Contentment. Reduce how much money you need to be happy and you reduce how much you need to be financially independent. Pretty simple. That’s why I could figured it out. Determine how much you really need. Focus on that. Then you’ll achieve it.
+Debt. Don’t finance or lease depreciating assets like cars, boats, RV’s, motorcycles. If you can’t afford to pay cash then you can’t afford it. Mandatory payments keep you from financial independence. Choose. Independence or toys?
+Value. Want to make more money? You need to become more financially valuable. I’m not talking about your value as a person. Or how special your mom said you are. If you want to make more you need to become worth more.
+Enjoyment. Find something you enjoy doing. Then don’t quit. Might take you a few ventures. That’s ok. It took me several. But once you find it, you’ll be more content. You’ll enjoy increasing your value. And you’ll want to keep going.
+Vision. Create a vision of what financial independence looks like for you. And why you want it. Write it down. Keep revisiting it. Revising it. Dreaming about it. And working towards it. It’s your North Star and compass.
+Gaming. Make it a game. Not against anyone else. Just you. Measure how you’re doing. Keep score. Celebrate your successes. Learn from your mistakes. Compete to make yourself the best version of you. And you will.
+So go for it. Jump in the game.
+
+And tell me how you like the view from the penthouse.
+
+Keep dreaming about financial independence. One day you’ll wake up and realize you’re no longer dreaming.
 
 
