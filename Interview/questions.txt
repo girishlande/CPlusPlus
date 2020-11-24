@@ -418,7 +418,81 @@ int main() {
     
   return 0;
 }
-s
+
+
+// ----------------------------
+// Google interview question
+// ----------------------------
+1 -> 1
+2 -> 2
+3 -> X
+4 -> X
+5 -> 5
+6 -> 9
+7 -> X
+8 -> 8
+9 -> 6
+0 -> 0
+
+std::map<char,char> flipMap;
+flipMap.add(std::pair('1','1'));
+flipMap.add(std::pair('2','2'));
+flipMap.add(std::pair('3','X'));
+
+
+bool isFlipSame(std::string input) {
+
+  for(size_t i=0; i<=input.length()/2; i++) {
+
+    if (input[i]!=flipMap(input[input.length()-i-1]))
+        return false;
+  }
+  return true;
+  
+}
+
+
+// 112 -> 121 (would return true) -> true
+// 12 -> ?? (would never return true) -> false (there's no arrangement)
+// 96 -> 96 -> true
+// 196 (961) -> 916 (916) -> true 
+// 166 -> ?? -> false
+
+bool isFlipRearrangementPossible(std::string input) {
+  std::map<char,int> freqMap;
+  freqMap.add(std::pair<char,int>('1',0));
+  freqMap.add(std::pair<char,int>('2',0));
+  freqMap.add(std::pair<char,int>('5',0));
+  freqMap.add(std::pair<char,int>('8',0));
+  freqMap.add(std::pair<char,int>('0',0));
+  freqMap.add(std::pair<char,int>('6',0));
+  freqMap.add(std::pair<char,int>('9',0));
+  
+  for(size_t i=0;i<input.length(); i++) {
+    if (flipMap[i]=='X')
+      return false;
+     freqMap[i] = freqMap[i]+1;
+  }
+
+  if (freqMap['6'] != freqMap['9'])
+    return false;
+  
+  int oddFrequency = 0;
+  for(auto x: freqMap) {
+      
+    if (a.first == '6' || a.first == '9')
+      continue;
+    
+    if (a.second%2==1)
+      oddFrequency++;
+    
+  }
+
+  if (oddFrequency<=1)
+    return true;
+  
+  return false;
+}
 
 
 

@@ -60,3 +60,9 @@ And tell me how you like the view from the penthouse.
 Keep dreaming about financial independence. One day you’ll wake up and realize you’re no longer dreaming.
 
 
+// -------------------------------------
+// How to create video tutorials
+// -------------------------------------
+You can use Camtasia software for recording videos. Store them in mp4 and use some codec which will reduce the size of 
+mp4 files. and then you can upload them. 
+
