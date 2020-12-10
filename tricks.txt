@@ -550,12 +550,50 @@ You can use some third party libraries such as
 EasyLogging which is just single file library. You can include in your project and start using it. 
 
 
+// Linux command 
+// --------------------------
+// to find all files with given name and print them 
+// --------------------------
+
+find . -type f -not -name .htaccess -printf "\n%p\n" -exec cat {} \;
+
+// Print last 2 lines of the file
+sudo find / -iname  HTTPServer.cfg -printf "\n%p\n" -exec tail -2 {} \;
 
 
+// --------------------------
+// To wait for some time
+// --------------------------
+sleep 10 
+OR
+read -p "Press enter to continue"
 
 
+// ---------------------------------------------------
+// Setup virtual drive everytime login on windows
+// ---------------------------------------------------
 
+we need to set up a virtual D: drive on the test system if it does not have a D: drive and you need to do that every time you log on the machine.  This is a little bit tedious especially for our developers and we tend to forget things.  Here is a way to set it up in windows Task Scheduler so that it will do that for you every time you log on the machine:
 
+ 
+
+Run Task Scheduler as administrator
+
+                Right click on Task Scheduler Library, choose “Create Task...”
+
+                Under “General” tab, check “Run with highest privileges”
+
+                Under “Triggers” tab, add “At log on” trigger
+
+                Under “Actions”, put the parameters: Action = “Start a program”, Program/script = subst, Add arguments (optional) = T: E:\Code\SourceControl
+
+                Under “Conditions”, uncheck “Start the task only if the computer is on AC power”
+
+                Click “OK” to save the new task
+
+                Log off and log on back again (or restart the computer)
+
+                (From: https://superuser.com/questions/1129113/can-i-run-a-subst-as-admin-when-i-startup)
 
 
 
