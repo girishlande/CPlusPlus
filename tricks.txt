@@ -1,3 +1,32 @@
+// ---------------------------
+// Linux command 
+// --------------------------
+
+find . -type f -not -name .htaccess -printf "\n%p\n" -exec cat {} \;     # to find all files with given name and print them 
+
+sudo find / -iname  HTTPServer.cfg -printf "\n%p\n" -exec tail -2 {} \;  # Print last 2 lines of the file
+
+ps -e | grep -I SCMain                                                   # Check if there is some process running with name SCMain
+ps -e | grep -I RCMain                                                   # Check if there is some process running with name SCMain
+sudo pwdx <pid>                                                          # Get details of process 
+
+grep -rnw './' -e 'pattern'                                             # recursive, line number, match whole word
+grep -Ril "string" /                                                    # recursive, ignore case, show filename 
+grep -r "string"  /path/to/dir                                          # Simple search for string in all files 
+find . -name '*.js' -exec grep -i 'string to search for' {} \; -print   # search string in only certain file types 
+
+telnet 10.112.115.125 13011      #To check if given machine is accessible and port is open (not blocked by firewall)
+
+// To enable some ports
+// -------------------------
+sudo firewall-cmd --list-ports                     # shows which ports are enabled 
+sudo firewall-cmd --add-port=25432/tcp             # Add extra port (create hole in firewall)
+sudo firewall-cmd --permanent                      # save settings 
+
+sleep 10  # to wait for some time in linux 
+read -p "Press enter to continue"
+
+
 // ---------------------------------------------------
 // Girish : Debug code to see intermediate output 
 // ---------------------------------------------------
@@ -74,128 +103,6 @@ void get_next_filename(const char* str)
 	outfile << "\n--------------------------------------------";
 	outfile << "\n Spacing X:" << ispacing_x << " Y:" << ispacing_y << " Z:" << ispacing_z <<std::endl;
 	outfile.close();
-
-// ---------------
-// Conversions
-// ---------------
-
-the MFC encapsulates only the SDK
-( so each CWnd has a HWND, CDC has HDC, ... CObject has a HOBJECT ).
-
-HWND hWnd = pWnd->GetSafeHwnd(); // pWnd is point to a CWnd*
-
-HDC hdc = ::GetDC(NULL);
-
-CWnd* pWnd = CWnd::FromHandle(hWnd); 
-
-CDC* pDC = CDC::FromHandle(hdc);
-
-
-CWnd* win = getParent();
-
-cwnd->HWND();
-
-
-Dialog :: paint() {
-
-PAINTSTRUCT  ps;
-CDC * dc = BeginPaint(&ps);
-RECT rect;
-GetWindowRect(&rect);
-
-
-HBRUSH blackbrush = CreateSolidBrush(BLACK_COLOR);  //BLACK_COLOR
-HGDIOBJ oldBrush = dc->SelectObject(blackbrush);
-dc->Rectangle(0, 0, rect.right - rect.left, rect.bottom);
-
-//Draw base line
-HPEN pen4 = CreatePen(PS_SOLID, 6, RGB(0, 0, 0));
-HGDIOBJ oldPen = dc->SelectObject(pen4);
-
-
-dc->SelectObject(oldPen);
-
-EndPaint(&ps);
-DeleteObject(pen4);
-DeleteObject(blackbrush);
-
-}
-
-
-// --------------------------------
-// Drawing in mFC window
-// --------------------------------
-CClientDC dc(this);
-	if (startpt.x != -1)
-	{
-		dc.MoveTo(startpt.x, startpt.y);
-		dc.LineTo(point.x, point.y);
-		CString msg("X,Y");
-		dc.TextOutW(point.x+10, point.y, msg);
-		RECT rect;
-		rect.left = point.x;
-		rect.top = point.y;
-		rect.right = point.x + 20;
-		rect.bottom = rect.top + 20;
-		COLORREF clr=102;
-		dc.FillSolidRect(&rect, clr);
-	}
-
-
-// ------------------------------------------
-// Loading cursor
-// --------------------------------------------
-// Typically you do not need to pass the application's hInstance
-// to Windows APIs directly because there are equivalent MFC
-// member functions that pass the hInstance for you.  The following
-// example is not typical:
-
-HCURSOR hCursor;
-hCursor = ::LoadCursor(AfxGetApp()->m_hInstance, 
-   MAKEINTRESOURCE(IDC_MYCURSOR));
-
-// A more direct way to get the application's hInstance is to
-// call AfxGetInstanceHandle:
-hCursor = ::LoadCursor(AfxGetInstanceHandle(), 
-   MAKEINTRESOURCE(IDC_MYCURSOR));
-
-// If you need the hInstance to load a resource, it is better
-// to call AfxGetResourceHandle instead of AfxGetInstanceHandle:
-hCursor = ::LoadCursor(AfxGetResourceHandle(), 
-   MAKEINTRESOURCE(IDC_MYCURSOR));
-
-// A better way to load the cursor resource is to call
-// CWinApp::LoadCursor
-hCursor = AfxGetApp()->LoadCursor(IDC_MYCURSOR);
-
-
-// ------------------------------------
-// Get Dialog handle
-// ------------------------------------
-Assuming you're using MFC (as indicated by the tag), then presumably you have a CDialog class instance.  CDialog is a subclass of CWnd, so you can retrieve the window handle by one of 3 ways:
-
-Directly accessing its m_hWnd member
-Casting it to an HWND with operator HWND()
-Calling GetSafeHwnd() on it
-
-// ----------------
-// Unique String
-// ----------------
-void ModelListHandler::UnqiuelyName( Model &m )
-{
-	BOOL UNIQUE = FALSE;
-	int num = 1;
-
-	if (CheckForName(m))
-	{
-		CString name = m.name;
-		while(!UNIQUE)
-		{
-			m.name.Format("%s %d",name.GetBuffer(),++num);
-			UNIQUE = !CheckForName(m);
-		}
-	}
-}
 
 // ---------------------------------
 //  Integer to string and date format
@@ -550,23 +457,6 @@ You can use some third party libraries such as
 EasyLogging which is just single file library. You can include in your project and start using it. 
 
 
-// Linux command 
-// --------------------------
-// to find all files with given name and print them 
-// --------------------------
-
-find . -type f -not -name .htaccess -printf "\n%p\n" -exec cat {} \;
-
-// Print last 2 lines of the file
-sudo find / -iname  HTTPServer.cfg -printf "\n%p\n" -exec tail -2 {} \;
-
-
-// --------------------------
-// To wait for some time
-// --------------------------
-sleep 10 
-OR
-read -p "Press enter to continue"
 
 
 // ---------------------------------------------------
