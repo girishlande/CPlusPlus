@@ -1,15 +1,19 @@
 READ THIS EVERY MORNING WHEN YOU LOG IN. 
 
-// ========================
-// HUMAN RELATIONSHIPS
-// ========================
+--------------------
+ HUMAN RELATIONSHIPS
+--------------------
+> WORK EVERYDAY HARD ENOUGH SUCH THAT YOU SLEEP PEACEFULLY AT END OF DAY.
+> DO NOT SPEAK TOO MUCH. THERE WILL BE LESS TROUBLE IN YOUR LIFE. 
+> DO NOT GET INVOLVED ANYTHING APART FROM OFFICE WORK. DELEGATE WORK USING MONEY. 
+> DON'T THINK ABOUT ANYTHING OTHER THAN WORK.
 > DO NOT CRITICISE YOUR SPOUSE AT ANY COST. 
-> DO NOT CRITICISE ANYONE EVER. DO NOT COMPLAIN ABOUT A PERSON, A THING OR A SITUATION 
+> DO NOT CRITICISE ANYONE EVER. ITS EXPENSIVE. 
+> DO NOT COMPLAIN ABOUT A PERSON, A THING OR A SITUATION 
 > DO NOT GIVE FREE ADVICE. PEOPLE ALREADY KNOW EVERYTHING. 
 > ALWAYS SAY TRUTH, NECESSARY and KIND THINGS. DO NOT HURT.
 > DO NOT GET INTO ARGUMENT WITH ANYONE. IDENTIFY ARGUMENT AND ASK QUESTIONS TO AVOID ARGUMENT.
 > IDENTIFY SITUATION OF ARGUMENT, KEEP SILENT. LISTEN. DON'T SAY ANYTHING.
-> TRY TO UNDERSTAND POINT OF VIEW OF OTHER PERSON. REPEAT WHAT THEY SAY. 
 > SILENCE IS SOLUTION TO MANY PROBLEMS. 
 > DO NOT REACT IMMEDIATELY. TAKE YOUR TIME AND RESPOND. 
 > SPEND SOME TIME COOKING FOOD THAT PEOPLE LIKE. 
@@ -22,9 +26,10 @@ READ THIS EVERY MORNING WHEN YOU LOG IN.
 > DO NOT TALK LOUDLY. DO NOT SHOUT AT ANYONE.
 > CLOSE YOUR EYES WHEN COMPILING. THINKING.
 
-TECHNICAL
-==============
-> LISTEN TO TECHNOLOGY VIDEOS WHENEVER FREE TIME.
+--------------------
+ TECHNICAL
+--------------------
+> LISTEN TO TECHNOLOGY VIDEOS ON UDEMY AND REPEAT IN YOUR TUTORIAL.
 > TRY OUT SMALL PROJECTS. PRACTICE PROGRAMS PRACTICAL. 
 > FOCUS ALL YOUR ENERGY IMPROVING YOURSELF IN ALL ASPECTS.
 > DONT WASTE TIME SURFING ON INTERNET WITH QUORA AND NEWS 
@@ -34,15 +39,17 @@ TECHNICAL
 > FOCUS ON SOMETHING WHERE YOU WILL ALWAYS WIN. PROGRAMMING. 
 > READ GOOGLE C++ CODING STYLE DOCUMENT. THIS WILL IMPROVE YOUR C++ SKILLS
 > ALWAYS GO THROUGH YOUR GIT PROJECTS, IT WILL REFRESH YOUR CONCEPTS. 
-> INSTEAD OF 10 MINUTES OF CHESS YOU CAN SPEND IN 10 MINUTES OF TECHNICAL GATHERING.
+> INSTEAD OF 10 MINUTES OF TIMEPASS YOU CAN SPEND IN 10 MINUTES IN RECORDING SOME SIMPLE TUTORIAL.
 
 HEALTH
+--------------------
 > TAKE DEEP BREATH
-> DONT SIT IN ONE PLACE LONGER. GO FOR WALK. CLIMB STAIRS
-> AVOID SWEETS. EAT 3 TIMES A DAY. NOTHING IN BETWEEN. 
-> DRINK PLENTY OF WATER.
+> TAKE BREAK EVERY 30 MINUTES
+> EVERY 20 MINUTES, LOOK AT 20 FEET FOR 20 SECONDS
+> DRINK PLENTY OF WATER
 > ALWAYS FOLLOW SLEEP SCHEDULE. SLEEP BEFORE 11:00. WAKEUP EARLY. 
 > DO NOT LOOK AT ANY SCREENS AFTER DINNER. READ A LITTLE. 
+> DRINK MILK STANDING
 
 SPIRITUAL
 > CHANT ATLEAST 1 ROUND DAILY.
@@ -58,14 +65,20 @@ QUOTES
 > weak people revenge, strong people forgive, intelligent people ignore. 
 > Kill them with success, bury them with smile. 
 > Never share your secrets with anyone, it will destroy you
-> Once you start working on something don't be afraid of failure and don't abandon it. people who work sincerely are the happiest. 
-> Starting point of all achievements is desire. Keep this constantly in your mind. weak desire brings weak results just like small fire makes small heat. 
+> Once you start working on something don't be afraid of failure and don't abandon it. 
+  people who work sincerely are the happiest. 
+> Starting point of all achievements is desire. Keep this constantly in your mind. 
+  weak desire brings weak results just like small fire makes small heat. 
+  
 7 Habits of highly effective people
-> Be proactive (See alternatives, not roadblocks. Focus on what you can influence. I am free to choose and I am responsible for my choices)
+-----------------------------------------
+> Be proactive (See alternatives, not roadblocks. Focus on what you can influence. 
+  I am free to choose and I am responsible for my choices)
 > Begin with end in mind (Mental creation precedes physical creation. Define practical outcomes)
 > Put First things first (Focus on the important, not just the urgent. Plan weekly, act daily)
 > Think Win Win (Effective long term relation requires mutual respect and mutual benefit. Build trust with coworkers.)
-> Seek first to understand then to be understood (To communicate effectively we must understand each other. Practice empathic listening. Give honest,accurate feedback)
+> Seek first to understand then to be understood (To communicate effectively we must understand each other. 
+  Practice empathic listening. Give honest,accurate feedback)
 > Synergize. Balance. (The whole is greater than sum of its parts. Think of new and better alternatives)
 > Sharpen the saw (To maintain and increase effectiveness, we must renew ourselves in body, heart, mind and soul).
 
@@ -82,8 +95,10 @@ Eat that Frog
 > Put the pressure on yourself
 > Most valuable asset is your earning ability
 
-> IDENTIFY YOUR FROG. EAT IT. REPEAT EVERY DAY. You will be amazed how quickly small steps taken consistently add up to big accomplishments. 
-> Decide exactly what you want. Write it down. set deadline on your goal. IT gives goal urgency. For you to achieve any kind of success, execution is everything. 
+> IDENTIFY YOUR FROG. EAT IT. REPEAT EVERY DAY. 
+  You will be amazed how quickly small steps taken consistently add up to big accomplishments. 
+> Decide exactly what you want. Write it down. set deadline on your goal. IT gives goal urgency. 
+  For you to achieve any kind of success, execution is everything. 
 > Single handle every task. 
 > Apply 80/20 rule. 20% of your activities will account for 80% of the results. 
 > Focus on key result areas. What do you need to do everday to do your job well ? Do those items. 
@@ -511,4 +526,228 @@ Eat That Frog by Brian Tracy
 “Think on paper.”
 “Always work from a list.”
 “Your ability to choose between the important and the unimportant is the key determinant of your success in life and work.”
+
+
+--------------------------------------------------------------------------------------------
+“Deep Work: Rules for Focused Success in a Distracted World” by Cal Newport (Book Summary)
+--------------------------------------------------------------------------------------------
+Deep Work by Cal Newport is a book about the science of productivity. Cal argues the best way to get more meaningful work done is by working deeply – working in a state of high concentration without distractions on a single task.
+
+The book is split into two parts. The first explains why deep work maximizes productivity and why only few people practice it. The second part shows us how to actually do it and make deep work a regular practice in our lives.
+
+The author, Cal Newport, is currently an assistant professor of computer science at Georgetown, author of multiple books including So Good They Can’t Ignore You, and owner of his well-known Study Hacks blog.
+
+This is definitely one of my favorite productivity books and I’d recommend it for anyone who wants to get serious and worthwhile work done in the age of dramatic distraction we live in today.
+
+Who Is Deep Work For?
+Anyone who wants to increase their productivity, especially knowledge workers
+Anyone who wants to get more done, but in less time
+Anyone interested in the science of multitasking, attention, and productivity
+1. What Is Deep Work?
+“Deep Work: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.”
+“Shallow Work: Noncognitively demanding, logistical-style tasks, often performed while distracted. These efforts tend to not create much new value in the world and are easy to replicate.”
+Cal Newport differs between deep work and shallow work. Deep work refers to distraction-free, high concentration work that improves your skills, creates a lot of value in little time, and is very hard to replicate.
+
+Shallow work refers to working on noncognitively demanding tasks with little focus and often while distracted. This type of working is easy to replicate. Think: checking emails every couple of minutes, responding to push notifications, and giving in to distractions like Facebook, Twitter, News websites, and so on.
+
+The hypothesis of the book is that the ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable. As a consequence, the few who cultivate this skill and make it a core of their working lives will thrive.
+
+This skill of deep work is so valuable that business writer and bestselling author Eric Barker has called it the superpower of the 21st century.
+
+2. Why Deep Work Is Rare, Yet Highly Valuable
+“The Deep Work Hypothesis: The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive.”
+Why is deep work rare? For starters, shallow work is easier. In addition, shallow work seems to be encouraged by most businesses. Think: constant connectivity, expectations of fast response times, or open plan offices. Employees, choosing the path of least resistance, will simply adopt to this type of shallow-work-inducing environment by, well, working in a shallow manner.
+
+According to Newport, most workers today succumb to something he calls increasingly visible busyness or busyness as proxy for productivity. In the absence of clear indicators of what it means to be valuable and productive at work, many knowledge workers turn toward an industrial indicator of productivity: doing lots of stuff in a visible manner.
+
+Cal Newport sums it up: “Deep work is hard and shallow work is easier and in the absence of clear goals for your job, the visible busyness that surrounds shallow work becomes self-preserving.”
+
+Why is deep work valuable? In short, because it maximizes the amount of productivity you can squeeze out of a certain amount of time.
+
+And the reason for that is quite simple. Deep work refers to single-tasking, without distractions, in a state of intense focus, for extended periods of time. Let’s unpack how each of these help us maximize productivity.
+
+Single-tasking. Research has proven over and over again that multitasking makes people less productive. Without a doubt, focusing on one task at a time maximizes productive output. (For more info on the benefits of single-tasking, check out the summary of The Happiness Track by Emma Seppäla!)
+Without distractions. This makes intuitive sense. You get more work done when you’re not constantly interrupted by distractions.
+Intense focus. If you can put all of your energy on the task at hand without distraction, you’ll get a lot more work done in less time. The more focused you are, the more productive.
+For extended periods of time. This has to do with a concept called attention residue, which we’ll discuss in the next point.
+3. Beware of Attention Residue
+“…when you switch from some Task A to another Task B, your attention doesn’t immediately follow – a residue of your attention remains stuck thinking about the original task. This residue gets especially thick if your work on Task A was unbounded and of low intensity before you switched, but even if you finish Task A before moving on, your attention remains divided for a while.”
+“…the common habit of working in a state of semi-distraction is potentially devastating to your performance. It might seem harmless to take a quick glance at your inbox every ten minutes or so. Indeed, many justify this behavior as better than the old practice of leaving an inbox open on the screen at all times (a straw-man habit that few follow anymore). But Leroy teaches us that this is not in fact much of an improvement. That quick check introduces a new target for your attention. Even worse, by seeing messages that you cannot deal with at the moment (which is almost always the case), you’ll be forced to turn back to the primary task with a secondary task left unfinished.”
+Attention residue is one of the big reasons why working deeply for extended periods of time is so beneficial for our productivity.
+
+This concept states that every time you’re switching from one task to another, a residue of your attention remains stuck thinking about the previous task. This makes it hard to work with the necessary focus and intensity required for deep work on the new task. As a result, you lose a little bit of productivity every time you switch tasks.
+
+Cal mentions an interesting study in the book. Participants started off working on a set of word puzzles. In one of the trials, they’d get interrupted and told they needed to move to a new and challenging task, in this case, reading résumés and making hypothetical hiring decisions. In other trials, the researchers let participants finish the puzzles first. In between puzzle solving and hiring, the researchers would deploy a quick lexical decision game to quantify the amount of residue left from the first task.
+
+The results? In the words of the lead researcher of this and similar experiments: “People experiencing attention residue after switching tasks are likely to demonstrate poor performance on that next task.”
+
+If you’re looking to maximize your productive output, work for extended periods with full concentration on a single task free from distraction. In other words, work deeply.
+
+4. Deep Work Is a Skill
+“…getting the most out of your deep work habit requires training, and as clarified previously, this training must address two goals: improving your ability to concentrate intensely and overcoming your desire for distraction.”
+Cal mentions a couple of times that the ability to do deep work needs to be fostered over a long period of time. If a newbie starts working deeply, he will not be working as deeply and for as long a time period as someone who’s been doing deep work for many months or years.
+
+In other words, deep work is a skill that needs to be practiced. Don’t expect to be able to work deeply for hours on end in the beginning. You might only have the concentration and energy to do it for an hour or two a day. But slowly, slowly, as you keep honing in on the skill, you’ll be able to work deeply and produce massive amounts of work and reap all the benefits of deep work.
+
+According to Newport, the two core skills needed for deep work are the ability to concentrate intensely and the ability to overcome the desire for distraction. Both sub-skills improve the overall skill of deep work.
+
+5. The Four Rules of Deep Work
+So, deep work is valuable. It maximizes productivity. Yada yada.
+
+The hard part isn’t knowing that deep work is valuable. The hard part is actually doing it. Why? Because we’re addicted to distractions. We are suckers for multitasking.
+
+The second part of the book is all about helping us deploy more deep work in our lives. To do that, Newport has come up with the following 4 rules:
+
+Rule #1: Work Deeply
+Rule #2: Embrace Boredom
+Rule #3: Quit Social Media
+Rule #4: Drain the Shallows
+Let’s briefly go over them one by one.
+
+Rule #1: Work Deeply. Working deeply, due to its effortful nature, is the very thing most of us don’t want to do. Add to this an environment and culture that makes deep work difficult, and a finite amount of willpower that gets depleted as we use it, and you have a recipe for shallow work. To make deep work a staple in our day-to-day lives, we need to create rituals and routines that make things easier and more automatic for us.
+
+Rule #2: Embrace Boredom. Intense concentration is a skill that must be trained. Much like athletes who must take care of their bodies outside of their training sessions, you’ll need to take care of your concentration outside of your deep work sessions. If, throughout your day-to-day life, you give in to distractions at the slightest hint of boredom, you’ll struggle to develop the type of intense concentration necessary for deep work.
+
+Even worse, you’ll literally train and rewire your brain for on-demand distraction. The result? You’ll be wired for getting distracted over and over again even if you want to concentrate and work deeply.
+
+The solution? Embrace boredom. Stop checking your inbox or looking at your smartphone at every opportunity you get. Train your ability to resist distractions.
+
+Rule #3: Quit Social Media. Social media is the prime example for shallow living. As Cal points out, just because it offers a little benefit, doesn’t mean it’s worth the time we give it. You simply can’t work deeply if you feel the need to hop on social media every couple of minutes. Due to its addictive nature, social media and deep living don’t go well together.
+
+Rule #4: Drain the Shallows. The Shallows is the name of a book written on the effects of the Internet on our brains and lives. Shallow work, if you recall, refers to answering emails, making phone calls, attending to meetings, and other inevitable but ultimately low-value tasks. If you’re serious about working deeply, you need to drain the Shallows – you need to schedule time for deep work and spend as little time on shallow work as possible. Don’t let shallow work get in the way of deep work.
+
+6. Use Routines to Ritualize Deep Work
+“That brings me to the motivating idea behind the strategies that follow: The key to developing a deep work habit is to move beyond good intentions and add routines and rituals to your working life designed to minimize the amount of your limited willpower necessary to transition into and maintain a state of unbroken concentration. If you suddenly decide, for example, in the middle of a distracted afternoon spent Web browsing, to switch your attention to a cognitively demanding task, you’ll draw heavily from your finite willpower to wrest your attention away from the online shininess. Such attempts will therefore frequently fail. On the other hand, if you deployed smart routines and rituals—perhaps a set time and quiet location used for your deep tasks each afternoon—you’d require much less willpower to start and keep going. In the long run, you’d therefore succeed with these deep efforts far more often.”
+Working deeply in a world that constantly pushes us towards shallow work is difficult. In order to achieve this feat, we need to create rituals and routines that are designed to minimize the amount of willpower necessary to transition into and maintain a block of unbroken concentration.
+
+According to Newport, there are broadly four approaches to systematically carving out time for deep work. (As mentioned previously, ad hoc approaches are less effective because they heavily rely on willpower and are thus hardly sustainable over the long-run.)
+
+Choose an approach or mix approaches that fit your specific lifestyle.
+
+>>Monastic Philosophy. This involves cutting yourself from distractions completely, like a monk in a monastery.
+
+>>Bimodal Philosophy. This mode alternates between a normally engaged life and a monastic approach. Cal Jung, for example, alternated between his normal therapy practice and social life in Zurich and a fully removed monk mode in his retreat house for writing.
+
+>>Rhythmic Philosophy. This involves a fixed time for deep work every day, such as between 5-7 a.m., or a fixed time for deep work throughout the week, such as every Monday and Thursday. Think: Jerry Seinfeld and his chain method.
+
+>>Journalistic Philosophy. This is Cal’s main approach. He fits deep work into his schedule whenever he can, kind of like a journalist who’s ready to write on deadline whenever the situation arises.
+
+Whatever works for you. The goal is to make deep work a staple in your life.
+
+7. Say “Yes” to the Wildly Important
+“As the authors of The 4 Disciplines of Execution explain, ‘The more you try to do, the less you actually accomplish.’ They elaborate that execution should be aimed at a small number of ‘wildly important goals.’ This simplicity will help focus an organization’s energy to a sufficient intensity to ignite real results.
+For an individual focused on deep work, the implication is that you should identify a small number of ambitious outcomes to pursue with your deep work hours. The general exhortation to ‘spend more time working deeply’ doesn’t spark a lot of enthusiasm. In a 2014 column titled, ‘The Art of Focus,’ David Brooks endorsed this approach of letting ambitious goals drive focused behavior, explaining: ‘If you want to win the war for attention, don’t try to say ‘no’ to the trivial distractions you find on the information smorgasborg; try to say ‘yes’ to the subject that arouses a terrifying longing, and let the terrifying longing crowd out everything else.’”
+Saying no to distractions just for the sake of saying no to distractions isn’t very motivating.  Saying no to distractions for the sake of achieving an ambitious goal, on the other hand, is highly motivating.
+
+If Facebook gets in the way of that wildly important goal you’re pursuing, then you’ll feel compelled to avoid that distraction. It’s a lot easier to say no to distractions when you have a really big Yes that you’re pursuing.
+
+This begs the question, what’s your wildly important goal? What’s the subject that arouses a terrifying longing in your heart? Figure it out, then banish distractions from your life and use deep work to make it happen as quickly as possible.
+
+8. The Value of Systematic Idleness
+“Decades of work from multiple different subfields within psychology all point toward the conclusion that regularly resting your brain improves the quality of your deep work. When you work, work hard. When you’re done, be done.”
+Cal Newport argues that you should inject regular and substantial (!) leisure time – complete freedom from professional concerns – into your day. This systematic idleness, paradoxically enough, is required to get (deep) work done.
+
+He offers three good reasons for this:
+
+Downtime aids insights. Some decisions, it turns out, are better left to your unconscious mind to untangle. By occupying your conscious mind with leisure activities, you’ll be able to make better decisions and reach more insights.
+Downtime helps recharge the energy needed to work deeply. The type of attention used during deep work – so-called directed attention – is a limited resource. In order to replenish that resource, you need to give it a break once in a while.
+The work that downtime replaces is usually not that important. Your capacity for deep work in a given day is limited to only a couple of hours. Once you’ve used up those hours, any work that comes afterward is less productive and thus less important.
+Note that when we’re talking about downtime, we’re not talking about shallow work and we’re not talking about activities that continue using your directed attention. Instead, we’re talking about true leisure time: going for a walk, having a casual conversation with a friend, listening to music, playing a game with your kids, or going for a run.
+
+How do you incorporate more downtime into your days? Cal Newport recommends a shut-down ritual: At the end of your workday, shut down your considerations of work issues until the next morning – no after-dinner email checking, no mental replays of conversations, and no scheming about how you’ll handle an upcoming challenge. As best as you can, shut down work thinking completely.
+
+Newport ends his workday by 5:30 p.m. and rarely works on weekends. Yet, he’s been able to write several best-selling books, publishes several scientific papers every year, and even won two competitive grants (whatever that is).
+
+The point is: Productivity isn’t about putting in more hours. It’s about getting the most out of the hours you work AND getting the most recovery out of the hours you don’t work.
+
+9. Get More Done in Less Time With Roosevelt Dashes
+“This strategy asks you to inject the occasional dash of Rooseveltian intensity into your own workday. In particular, identify a deep task (that is, something that requires deep work to complete) that’s high on your priority list. Estimate how long you’d normally put aside for an obligation of this type, then give yourself a hard deadline that drastically reduces this time… Motivate yourself by setting a countdown timer on your phone and propping it up where you can’t avoid seeing it as you work.”
+“At this point, there should be only one possible way to get the deep task done in time: working with great intensity – no email breaks, no daydreaming, no Facebook browsing, no repeated trips to the coffee machine. Like Roosevelt at Harvard, attack the task with every free neuron until it gives way under your unwavering barrage of concentration.”
+Roosevelt dashes – inspired by Teddy Roosevelt’s brief but intense study periods – are a simple way to inject some deep work into your day. The beauty of these work sprints is that they are incompatible with distraction (there’s no way you can give in to distractions and still reach your deadline), thus improving your ability to resist such urges.
+
+In addition, using these dashes regularly helps you achieve a new level of concentration. Why? Because they are like interval training for the concentration centers in your brain.
+
+10. The Deep Life
+”The deep life, of course, is not for everybody. It requires hard work and drastic changes to your habits. For many, there’s a comfort in the artificial busyness of rapid e-mail messaging and social media posturing. While the deep life demands that you leave much of that behind. There’s also an uneasiness that surrounds any effort to produce the best things you’re capable of producing, as this forces you to confront the possibility that your best is not (yet) that good.”
+Let’s face it: Living and working deeply is a pain in the ass.
+
+You need to constantly fight distractions, push yourself and your concentration to the limits, spend less time on social media, spend less time on the Internet, plan your days (even your leisure time!) in advance, and so on.
+
+The deep life isn’t for everybody. For most people, it’s too much work and too much of a hassle. Much easier to give in to the comforts of artificial busyness. Much easier to waste away time on social media. Much easier to occupy yourself with shallow tasks. Much easier to give in to temptations whenever they arise.
+
+However, if you’re serious about maximizing your productivity, deploying your mind to its fullest capacity, and getting big things done, then I’m afraid there’s no other (and no better) way than to pursue the deep life.
+
+Cal Newport ends the book with a quote from writer Winifred Gallagher: “I’ll live the focused life, because it’s the best kind there is.”
+
+जानवरों के डॉक्टर के पास एक Lady आई जिनके साथ एक high breed का कुत्ता था।
+कहने लगी....
+"मेरे कुत्ते के साथ अजीबो गरीब problem हो गई है।
+मेरा कुत्ता बड़ा हट्टी (Disobidient) हो गया है.....
+इसे अपने पास बुलाती हूँ तो ये दूर भाग जाता है।
+Please कुछ करें.. 
+I am very attached to him. I can not tolerate his indifference."
+ डॉक्टर ने कुत्ते को ग़ौर से देखा।  पन्द्रह मिनट examin करने के बाद मैं  कहा...
+ये कुत्ता एक रात के लिए मेरे पास छोड़ दें। मैं इसका observation कर के इलाज करूँगा।
+उसने बडी बेदिली से हामी भर ली।
+सब चले गए.....
+डॉक्टर ने अपने assistant को आवाज़ दी...और कहा कि इसे भैंसों के साथ बांध दो और हर आधे घंटे पर इसे केवल पानी देना और इसको चमड़े के हन्टर से मारना।
+डॉक्टर का assistant जट् आदमी था। 
+रात भर कुत्ते के साथ हन्टर ट्रीटमेंट करता रहा।
+दूसरे दिन लेडी आ धमकीं।
+Sir 
+what about my pup?
+Doctor said__
+Hope your pup has missed you too ......
+डॉक्टर का assistant कुत्ते को ले आया़. 
+ज्यों ही कुत्ता कमरे मे आया..छलांग लगा के madam की गोद मे आ बैठा, 
+लगा दुम हिलाने, 
+मुंह चाटने!!
+Madam कहने लगीँ: 
+सर, आपने इसके साथ क्या किया कि अचानक इसका यह हाल है?
+डॉक्टर ने कहा: बड़े से एयर कंडीशनर कमरे, रोज़ अति स्वादिष्ट भोजन खा खाके ये अपने को मालिक समझ बैठा था और अपने मालिक की पहचान भूल बैठा था
+ बस इसका यही वहम उतारने के लिए थोड़ा
+Psychological plus physical treatment की ज़रूरत थी_ 
+वह दे दी,----- 
+now he is Okay...
+सारांश ~~
+किसीभी प्राणी को जितना सुख और ऐषोआराम मिलता हैं , वह उतना ही हठी बनता है और  हेकड़ी दिखाने लगता है ,
+अनुकूल परिस्थिती प्राणी को निकम्मा बनाती है 
+प्रतिकूल परिस्थिती प्राणी को सुधारती है 
+
+
+HABITS
+-------------
+1. Never open multiple tabs on your browser because it overwhelms your mind and you’re not able to focus even on the single tab. Dedicate one browser for your work and others for entertainment.
+2. Because dehydration causes you sleepiness, low blood pressure, headache, and dizziness. So, it’s important to keep yourself hydrated. In a day, men should drink 3.7 liters of water and women drink 2.7 liters of water.
+3. Sitting, promote slows blood circulation in your legs, and your body starts to slow down. To reverse the effects, try to decrease the amount of time spent sitting. The research found out that, 87% of employees who used the standing desk reported feeling more energetic and focused.
+4. If you start sleeping at the same time then you don’t even need an alarm clock. Because your mind will wake you up automatically. The mind loves to follow patterns and routines.
+
+Vivekanand
+=============
+“Whatever you are doing, put your whole mind on it. If you are shooting, your mind should be only on the target. Then you will never miss. If you are learning your lessons, think only of the lesson. In my country boys are taught to do this.
+
+SPOILING CHILDREN (How to spoil your child)
+-------------------
+1. When child wakes up (quite late, 8:30 am) ask child "Did your father give you water ? "
+So now its responsibility of Father to give you water. Child thinks that its other persons responsibility to feed it.
+Make it drink water, Apply moisturiser, Supply gifts, Supply everything. 
+
+2. Always calling child with pet names like  Babu, Babadya, Pillu, Sonya, Monya. 
+This way child always remains child. He never grows up. 
+Also calling them with such names, natural response of child is to show laziness, responding slowly and pampered. 
+Then there is extreme, Calling them with bad names like
+Bavlat, Murkha, Nalayak. When you call your child with such names they tend to feel negative emotions in them and become like that. 
+
+3. Pestering your child with certain things like Do this, Do that. 
+
+4. Best way to teach a child is by action. That is natural for them to learn anything. 
+for e.g 
+ > If you want your child to wake up early, you start waking up early
+ > If you want your child to do things quickly, you start doing things quickly
+ > If you want your child not to watch TV, Mobile. Then you should stop watching TV and mobile in the first place 
+ > If you want your child to study hard, You yourself start working hard in your area. 
+   You can't sleep around while child is studying. OR you can't watch TV when child is studying. 
+
+
+
 
