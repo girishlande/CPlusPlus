@@ -63,6 +63,6 @@ Keep dreaming about financial independence. One day you’ll wake up and realize
 // -------------------------------------
 // How to create video tutorials
 // -------------------------------------
-You can use Camtasia software for recording videos. Store them in mp4 and use some codec which will reduce the size of 
+You can use Camstudio  software for recording videos. Store them in mp4 and use some codec which will reduce the size of 
 mp4 files. and then you can upload them. 
 

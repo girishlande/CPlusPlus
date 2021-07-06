@@ -11,7 +11,7 @@ what is deep copy?
 
 write copy constructor for following class 
 class Test {
-  int * buffer; // this buffer can hold 100 integers
+  int * buffer; // buffer size = 100 integeres
   public:
    // copy constructor
 }
@@ -101,10 +101,11 @@ void printPrimeNumbers(int a, int b);
 // -------------------------------------------------------------
 // write a function to right shift array by 'k' elements. 
 void RightShiftArray(int* arr, int Arraysize, int k);
+
 // e.g 
 // Input : int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-// RightShiftArray(a, 9, 3);
-// Output : 7 8 9 1 2 3 4 5 6
+// RightShiftArray(a, 9, 1);
+// Output :  9 1 2 3 4 5 6 7 8 
 // write definition of following function
 void RightShiftArray(int* arr, int Arraysize, int k);
 
@@ -501,3 +502,4 @@ bool isFlipRearrangementPossible(std::string input) {
 		  
 
 
+https://youtu.be/MXitgADEreE
