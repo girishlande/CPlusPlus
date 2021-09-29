@@ -99,13 +99,15 @@ void printBinary(int decimal) {
 void printPrimeNumbers(int a, int b);
 
 // -------------------------------------------------------------
-// write a function to right shift array by 'k' elements. 
+// write a function to right shift array by 'k' elements in place. 
+// NO extra array memory should be used.
 void RightShiftArray(int* arr, int Arraysize, int k);
 
-// e.g 
-// Input : int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-// RightShiftArray(a, 9, 1);
-// Output :  9 1 2 3 4 5 6 7 8 
+// For example, consider following array input and function call 
+// Input array: int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9};
+// RightShiftArray(arr, 9, 2);
+// Output array: int arr[] = {8, 9, 1, 2, 3, 4, 5, 6, 7}; 
+
 // write definition of following function
 void RightShiftArray(int* arr, int Arraysize, int k);
 
@@ -421,85 +423,32 @@ int main() {
 }
 
 
-// ----------------------------
-// Google interview question
-// ----------------------------
-1 -> 1
-2 -> 2
-3 -> X
-4 -> X
-5 -> 5
-6 -> 9
-7 -> X
-8 -> 8
-9 -> 6
-0 -> 0
-
-std::map<char,char> flipMap;
-flipMap.add(std::pair('1','1'));
-flipMap.add(std::pair('2','2'));
-flipMap.add(std::pair('3','X'));
-
-
-bool isFlipSame(std::string input) {
-
-  for(size_t i=0; i<=input.length()/2; i++) {
-
-    if (input[i]!=flipMap(input[input.length()-i-1]))
-        return false;
-  }
-  return true;
-  
-}
-
-
-// 112 -> 121 (would return true) -> true
-// 12 -> ?? (would never return true) -> false (there's no arrangement)
-// 96 -> 96 -> true
-// 196 (961) -> 916 (916) -> true 
-// 166 -> ?? -> false
-
-bool isFlipRearrangementPossible(std::string input) {
-  std::map<char,int> freqMap;
-  freqMap.add(std::pair<char,int>('1',0));
-  freqMap.add(std::pair<char,int>('2',0));
-  freqMap.add(std::pair<char,int>('5',0));
-  freqMap.add(std::pair<char,int>('8',0));
-  freqMap.add(std::pair<char,int>('0',0));
-  freqMap.add(std::pair<char,int>('6',0));
-  freqMap.add(std::pair<char,int>('9',0));
-  
-  for(size_t i=0;i<input.length(); i++) {
-    if (flipMap[i]=='X')
-      return false;
-     freqMap[i] = freqMap[i]+1;
-  }
-
-  if (freqMap['6'] != freqMap['9'])
-    return false;
-  
-  int oddFrequency = 0;
-  for(auto x: freqMap) {
-      
-    if (a.first == '6' || a.first == '9')
-      continue;
-    
-    if (a.second%2==1)
-      oddFrequency++;
-    
-  }
-
-  if (oddFrequency<=1)
-    return true;
-  
-  return false;
-}
+////////////////
+// SOLID principles
+1 . Single Responsibility : \
+There should be only one reason for class/function/component to change. For e.g If We write class Vehicle it will have to do lot of things
+such as oilcheck(), airPressure, Accelerate() etc. But if we split the class into Tyre, Engine then responsibility of oilCheck and airPressure will 
+go with Engine and Tyre class. This principle leads to more reusability. 
+2. Open Close principle
+A class should be open for extension but close for modification. Promotes re utilization. When we split class, it should be such that behavior can 
+be extended or replaced. For e.g Say you have Base class Shape which has method CalculateArea() which takes array of shapes. This method checks what
+kind of shape it is and then uses different logic to calculate area and then adds it. With this approach whenever new shape is added, you have to change Shape class CalculateArea() method to conside this new Shape. Instead of this if Shape class has virtual function Area()
+which returns area of that Shape then you can simply create new class and override area() method. 
+3. Liskov substitution
+You should be able to change an instance using sub type and your code should still work 
+IF you write Square class and derive it from Rectangle then its not proper inheritance. You can't replace rectangle uses by Square.
+So do not use inheritance to just avoid some lines of code. You should be able to replace Base class instance with derived class instance. 
+4. Interface segragation 
+More interface are better than too little
+Allows to split responsibility of class without Liskov substitution principle.
+Client should not be forced to implement interfaces they don't use. 
+Instead of one FAT interface many small interfaces are preferred based on groups of methods each one serving submodule. 
+For e.g Class animal has feed() method. We derive Dog and Tiger from Animal. Now we add groom() method to Animal base class. Now Tiger can't be groomed.
+Hence its not really useful method for Tiger. But to keep Compiler happy we provide dummy implementation of groom() for Tiger. 
+So instead of that, create another interface Pet deriving from Animal. Add groom() method to it and then derive Dog from Pet. 
+5. dependency Inversion
+One should depend on abstraction than concrete implementation
 
 
 
-
-		  
-		  
-
-
-https://youtu.be/MXitgADEreE
+                     

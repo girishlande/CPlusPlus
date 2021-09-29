@@ -1,8 +1,8 @@
 // --------------------
 // Introduction 
 // --------------------
-Hello, I am Girish. I work as Lead developer with Agiliad. 
-My Experience is about 13 years in software development. 
+Hello, I am Girish. I work as Senior technical architect with Agiliad. 
+My Experience is about 14 years in software development. 
 I have been responsible for developing various tools and features in some of the products in CAD and medical domain. 
 I know C++, QT, Javascript and QML. Batch scripts to perform some build related work. which is monotonous in nature.
 I understand cmake to some extent where I can use it build some simple projects using some third party libraries
