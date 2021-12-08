@@ -12,7 +12,7 @@ public:
     virtual void do_it()=0;
 };
 
-class A:public I {
+class A: public I {
 public:
     ~A() {
         cout<< "\n A destructor";
@@ -22,7 +22,7 @@ public:
     }
 };
 
-class D:public I {
+class D: public I {
     I* m_wrapper{0};
 public:
     D(I* ptr):m_wrapper(ptr) {}
@@ -38,7 +38,7 @@ public:
     }
 };
 
-class X:public D {
+class X: public D {
 public:
     X(I* core) :D(core) {
 
@@ -52,7 +52,7 @@ public:
     }
 };
 
-class Y:public D {
+class Y: public D {
 public:
     Y(I* core) :D(core) {
 
@@ -66,7 +66,7 @@ public:
     }
 };
 
-class Z:public D {
+class Z: public D {
 public:
     Z(I* core) :D(core) {
 
