@@ -1,0 +1,22 @@
+What is polymorphism and what is use of it ?
+Compile time => Method overloading and Operator overloading
+Run time => Virtual functions , Function overriding
+
+What is use of operator overloading ?
+
+What is namespace ? 
+
+what is use of virtual destructor ?
+
+what is deep copy?
+
+write copy constructor for following class 
+class Test {
+  int * buffer; // buffer size = 100 integeres
+  public:
+   // copy constructor
+}
+
+
+// write a function to check if the input number is prime 
+bool isPrime(int n);

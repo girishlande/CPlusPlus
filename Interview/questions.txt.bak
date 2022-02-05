@@ -11,6 +11,7 @@ What is use of abstraction?
 what is advantage of Encapsulation?
 What is namespace ? 
 Why do we use friend function ? 
+what is inline function?
 
 what is use of virtual destructor ?
 what is benefit of run time polymorphism using virtual function?
@@ -99,6 +100,9 @@ Write function to print binary number of input decimal number
 void printBinary(int decimal) {
    // your logic goes here 
 }
+
+// write a function to check if the input number is prime 
+bool isPrime(int n);
 
 // -------------------------------------------------------------
 // write a function to print all prime numbers between given 2 numbers.
