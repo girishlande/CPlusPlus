@@ -1,0 +1,55 @@
+class Point2d {
+    int x;
+    int y;
+public:
+    Point2d(int x, int y) : x(x), y(y) {
+
+    }
+
+    friend ostream& operator<<(ostream& out, const Point2d& point);
+
+    const Point2d& operator++() {
+        this->x = this->x + 1;
+        this->y = this->y + 1;
+        return *this;
+    }
+
+    Point2d& operator++(int) {
+        this->x = this->x + 1;
+        this->y = this->y + 1;
+        return *this;
+    }
+
+    Point2d& operator+(const Point2d& point) {
+        this->x = this->x + point.x;
+        this->y = this->y + point.y;
+        return *this;
+    }
+
+    Point2d& operator-() {
+        this->x = this->x * -1;
+        this->y = this->y * -1;
+        return *this;
+    }
+};
+
+ostream& operator<<(ostream& out, const Point2d& point) {
+    out << "\nX:" << point.x << " Y:" << point.y;
+    return out;
+}
+
+int main()
+{
+    Point2d p1(10, 20);
+    cout << p1;
+    ++p1;
+    p1++;
+    cout << p1;
+
+    Point2d p2(5, 10);
+    Point2d p3 = p1 + p2;
+    cout << p3;
+
+    p3 = -p3;
+    cout << p3;
+}

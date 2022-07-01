@@ -22,41 +22,43 @@ public:
 	}
 };
 
-class Observer {
-protected:
-	Subject* _model;
-	int _value;
+
+// -------------------
+The observer pattern 
+// ------------------
+is a software design pattern in which an object, called the subject, maintains a list of its dependents, called observers, and notifies them automatically of any state changes, usually by calling one of their methods.
+
+#include <iostream>
+#include "Subject.h"
+#include "Observer.h"
+
+class MailObserver : public Observer {
 public:
-	Observer(Subject* s, int v) :_model(s),_value(v) {
-		s->attach(this);
-	}
-	virtual void update() = 0;
+    MailObserver(Subject* s) :Observer(s) {}
+    void notify(const string& message) {
+        cout << "\n Mail Observer notified : " << message;
+    }
+};
+
+class SMSObserver : public Observer {
+public:
+    SMSObserver(Subject* s) :Observer(s) {}
+    void notify(const string& message) {
+        cout << "\n SMS Observer notified : " << message;
+    }
 };
 
 
-class DivObserver : public Observer {
-public:
-	DivObserver(Subject* s,int v) :Observer(s,v) {}
-	virtual void update() {
-		cout << "Divobserve update()" << endl;
-		cout << "answer:" << _model->getValue() / _value << endl;
-	}
-};
+int main()
+{
+    Subject sub;
+    MailObserver mob(&sub);
+    SMSObserver sms(&sub);
 
-class MultObserver : public Observer {
-public:
-	MultObserver(Subject* s, int v) :Observer(s, v) {}
-	virtual void update() {
-		cout << "MultObserver update()" << endl;
-		cout << "answer:" << _model->getValue() * _value << endl;
-	}
-};
+    sub.update(string("Indian Won match"));
+    sub.update(string("Russia-Ukrain war"));
 
-void main() {
-cout << "Hello Girish" << endl;
-	Subject sub;
-	DivObserver d(&sub,2);
-	MultObserver m(&sub, 2);
-	sub.updateValue(10);
-	sub.updateValue(20);
+
 }
+
+
