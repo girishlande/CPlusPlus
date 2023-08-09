@@ -2,7 +2,7 @@
 using namespace std;
 
 // write a recursive function to return factorial of a input 
- // for e.g factorial(5)
+// for e.g factorial(5)
 // output: 120
 
 // write definition of following function declaration
